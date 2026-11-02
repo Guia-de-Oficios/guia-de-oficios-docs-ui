@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-background" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crear Cuenta - Guía de Oficios</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Inter Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6",
+            "surface-dim": "#d2d9f4",
+            "inverse-primary": "#b8c4ff",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#00210a",
+            "primary": "#00288e",
+            "on-surface-variant": "#444653",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#ffa85d",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#ffb77d",
+            "inverse-on-surface": "#eef0ff",
+            "primary-fixed": "#dde1ff",
+            "surface": "#faf8ff",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed-dim": "#79db8d",
+            "tertiary-container": "#743d00",
+            "secondary-fixed": "#95f8a7",
+            "on-tertiary-fixed": "#2f1500",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-fixed-variant": "#005323",
+            "on-primary-fixed": "#001453",
+            "outline-variant": "#c4c5d5",
+            "secondary-container": "#92f5a4",
+            "tertiary": "#532a00",
+            "primary-container": "#1e40af",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#3755c3",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "tertiary-fixed": "#ffdcc3",
+            "surface-bright": "#faf8ff",
+            "primary-fixed-dim": "#b8c4ff",
+            "on-primary-fixed-variant": "#173bab",
+            "on-background": "#131b2e",
+            "on-secondary-container": "#007233",
+            "on-primary-container": "#a8b8ff",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#006d30",
+            "inverse-surface": "#283044",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "outline": "#757684",
+            "surface-container": "#eaedff",
+            "background": "#faf8ff",
+            "surface-variant": "#dae2fd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "2rem",
+            "space-xs": "0.25rem",
+            "margin": "1rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Inter"],
+            "label-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "title-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-lg": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-full bg-background text-on-surface antialiased flex flex-col items-center">
+<!-- Main Container / Mobile viewport canvas -->
+<div class="w-full max-w-md min-h-screen bg-surface-container-lowest flex flex-col shadow-sm">
+<!-- Top Bar with Back Button & Centered Official Brand Header -->
+<header class="w-full bg-surface-container-lowest px-margin py-space-sm flex items-center justify-between border-b border-outline-variant/30 sticky top-0 z-30">
+<button aria-label="Volver atrás" class="w-12 h-12 flex items-center justify-center rounded-xl text-on-surface hover:bg-surface-container-high transition-colors active:scale-95" type="button">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_back">arrow_back</span>
+</button>
+<!-- Brand Logo Container -->
+<div class="flex items-center justify-center flex-1 pr-12">
+<img alt="Guía de Oficios Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UJx21TchJPvrKKui6DZtI1FR51PQiUX21CeLWTyz6QXC1GoWS-YaeMm5NOZNZM6brCTwdGcGEnl-mJlRDqiLJ47GFHvPhgilitkWu6P_7ztDcGX6X7rPzbg2OmtCCl2lQdQV2xNLcMOmwDChYbX1730CJDTTKJA7l2gEybTKPBGQsEjJM35n0dLaD_YflXSBtDfHmFxTseLs3IUMVEjBgTpvpktdx8VGQ97wSGmsPg4g"/>
+</div>
+</header>
+<!-- Main Form Scroll Canvas -->
+<main class="flex-1 px-margin py-space-lg flex flex-col">
+<!-- Welcome Headline Block -->
+<section class="mb-space-lg">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary text-label-sm font-label-sm mb-space-sm">
+<span class="material-symbols-outlined text-base" data-icon="verified_user">verified_user</span>
+<span>Red Vecinal Segura</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mb-space-xs">
+          Creá tu cuenta en Guía de Oficios
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Conectate con vecinos y profesionales de confianza de tu barrio en pocos minutos.
+        </p>
+</section>
+<!-- Fast Auth CTA: Google Button -->
+<section class="mb-space-lg">
+<button class="w-full h-14 bg-surface-container-lowest border-2 border-outline-variant/40 rounded-xl px-space-md flex items-center justify-center gap-3 shadow-sm hover:bg-surface-container-low transition-all active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-primary-container" type="button">
+<!-- Google G Logo SVG -->
+<svg class="w-6 h-6 shrink-0" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold tracking-normal">
+            Continuar con Google
+          </span>
+</button>
+</section>
+<!-- Elegant Divider -->
+<div class="relative flex items-center justify-center mb-space-lg">
+<div class="w-full border-t border-outline-variant/40"></div>
+<span class="bg-surface-container-lowest px-4 font-label-sm text-label-sm text-on-surface-variant font-medium whitespace-nowrap">
+          O completá tus datos a mano
+        </span>
+</div>
+<!-- Registration Form -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault();">
+<!-- Role Selector Option Cards -->
+<fieldset class="flex flex-col gap-space-xs">
+<legend class="font-label-md text-label-md text-on-surface font-semibold mb-space-xs">
+            Me registro como:
+          </legend>
+<div class="grid grid-cols-2 gap-3">
+<!-- Client Option -->
+<label class="relative flex flex-col p-3 rounded-xl border-2 border-primary-container bg-surface-container-low cursor-pointer transition-all has-[:checked]:border-primary-container has-[:checked]:bg-primary-container/10">
+<input checked="" class="sr-only" name="user_role" onchange="updateRoleHighlight(this)" type="radio" value="client"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-primary" data-icon="search">search</span>
+<div class="w-4 h-4 rounded-full border-2 border-primary-container flex items-center justify-center bg-surface-container-lowest">
+<div class="w-2 h-2 rounded-full bg-primary-container"></div>
+</div>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Busco oficios</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Cliente / Vecino</span>
+</label>
+<!-- Craftsman Option -->
+<label class="relative flex flex-col p-3 rounded-xl border-2 border-outline-variant/40 bg-surface-container-lowest cursor-pointer transition-all has-[:checked]:border-primary-container has-[:checked]:bg-primary-container/10 hover:border-outline">
+<input class="sr-only" name="user_role" onchange="updateRoleHighlight(this)" type="radio" value="worker"/>
+<div class="flex items-center justify-between mb-1">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="handyman">handyman</span>
+<div class="w-4 h-4 rounded-full border-2 border-outline-variant flex items-center justify-center bg-surface-container-lowest">
+<div class="w-2 h-2 rounded-full bg-transparent"></div>
+</div>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface leading-tight">Soy profesional</span>
+<span class="text-xs text-on-surface-variant mt-0.5">Electricista, etc.</span>
+</label>
+</div>
+</fieldset>
+<!-- Full Name Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="name">
+<span class="material-symbols-outlined text-lg text-on-surface-variant" data-icon="person">person</span>
+            Nombre y apellido completo
+          </label>
+<div class="relative">
+<input class="w-full h-14 px-4 bg-surface-container-lowest rounded-xl border-2 border-outline-variant/50 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary-container focus:ring-0 transition-colors" id="name" name="name" placeholder="Ej. Carlos Alberto Gómez" required="" type="text"/>
+</div>
+</div>
+<!-- Phone Input (WhatsApp) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center justify-between" for="phone">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-lg text-secondary" data-icon="call">call</span>
+              Teléfono celular con prefijo
+            </span>
+<span class="text-xs font-semibold text-secondary">Para coordinar trabajos</span>
+</label>
+<div class="relative">
+<input class="w-full h-14 px-4 bg-surface-container-lowest rounded-xl border-2 border-outline-variant/50 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary-container focus:ring-0 transition-colors" id="phone" name="phone" placeholder="Ej. 11 5544-3322 (para WhatsApp)" required="" type="tel"/>
+</div>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="email">
+<span class="material-symbols-outlined text-lg text-on-surface-variant" data-icon="mail">mail</span>
+            Correo electrónico
+          </label>
+<div class="relative">
+<input class="w-full h-14 px-4 bg-surface-container-lowest rounded-xl border-2 border-outline-variant/50 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary-container focus:ring-0 transition-colors" id="email" name="email" placeholder="Ej. carlos@correo.com" required="" type="email"/>
+</div>
+</div>
+<!-- Password Input with Toggle -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5" for="password">
+<span class="material-symbols-outlined text-lg text-on-surface-variant" data-icon="lock">lock</span>
+            Contraseña
+          </label>
+<div class="relative flex items-center">
+<input class="w-full h-14 pl-4 pr-14 bg-surface-container-lowest rounded-xl border-2 border-outline-variant/50 font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-primary-container focus:ring-0 transition-colors" id="password" name="password" placeholder="Al menos 6 números o letras" required="" type="password"/>
+<button aria-label="Ver contraseña" class="absolute right-1 w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-transform" id="toggle-password" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-2xl" data-icon="visibility" id="eye-icon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Privacy & Protection Trust Badge -->
+<div class="mt-space-xs p-3.5 rounded-xl bg-secondary-fixed/30 border border-secondary-fixed-dim/60 flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl shrink-0 mt-0.5" data-icon="shield">shield</span>
+<p class="font-label-sm text-label-sm text-on-secondary-fixed-variant leading-snug">
+<strong class="font-bold">Tus datos están protegidos.</strong> Nunca te enviaremos publicidad molesta ni compartiremos tu teléfono.
+          </p>
+</div>
+<!-- Submit Button CTA -->
+<button class="w-full h-14 mt-space-sm bg-primary-container text-on-primary rounded-xl font-title-md text-title-md font-bold flex items-center justify-center gap-2 shadow-md hover:bg-primary transition-all active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-primary-container/30" type="submit">
+<span>Crear mi cuenta</span>
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Terms Microcopy -->
+<p class="text-center font-label-sm text-xs text-on-surface-variant mt-space-md px-2">
+        Al registrarte, aceptás los 
+        <a class="text-primary-container font-semibold underline underline-offset-2" href="#">Términos de Convivencia Vecinal</a> y la 
+        <a class="text-primary-container font-semibold underline underline-offset-2" href="#">Política de Privacidad</a>.
+      </p>
+<!-- Bottom Session Navigation Pivot -->
+<footer class="mt-space-xl pt-space-md pb-space-lg border-t border-outline-variant/30 text-center">
+<p class="font-body-md text-body-md text-on-surface">
+          ¿Ya tenés una cuenta?
+        </p>
+<a class="inline-flex items-center gap-1 font-title-md text-title-md font-bold text-primary-container hover:text-primary mt-1 focus:outline-none underline underline-offset-4" href="#">
+<span>Iniciar sesión</span>
+<span class="material-symbols-outlined text-xl" data-icon="login">login</span>
+</a>
+</footer>
+</main>
+</div>
+<script>
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('password');
+      const eyeIcon = document.getElementById('eye-icon');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        eyeIcon.textContent = 'visibility_off';
+      } else {
+        passwordInput.type = 'password';
+        eyeIcon.textContent = 'visibility';
+      }
+    }
+
+    function updateRoleHighlight(radio) {
+      const labels = document.querySelectorAll('input[name="user_role"]');
+      labels.forEach(input => {
+        const parent = input.closest('label');
+        const dot = parent.querySelector('div > div');
+        const icon = parent.querySelector('.material-symbols-outlined');
+        if (input.checked) {
+          parent.classList.add('border-primary-container', 'bg-primary-container/10');
+          parent.classList.remove('border-outline-variant/40', 'bg-surface-container-lowest');
+          dot.classList.add('bg-primary-container');
+          dot.classList.remove('bg-transparent');
+          icon.classList.add('text-primary');
+          icon.classList.remove('text-on-surface-variant');
+        } else {
+          parent.classList.remove('border-primary-container', 'bg-primary-container/10');
+          parent.classList.add('border-outline-variant/40', 'bg-surface-container-lowest');
+          dot.classList.remove('bg-primary-container');
+          dot.classList.add('bg-transparent');
+          icon.classList.remove('text-primary');
+          icon.classList.add('text-on-surface-variant');
+        }
+      });
+    }
+  </script>
+</body></html>

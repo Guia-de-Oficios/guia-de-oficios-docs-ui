@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Trabajo Terminado y Calificación - Guía de Oficios</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "error-container": "#ffdad6",
+            "surface-dim": "#d2d9f4",
+            "inverse-primary": "#b8c4ff",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#00210a",
+            "primary": "#00288e",
+            "on-surface-variant": "#444653",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#ffa85d",
+            "on-surface": "#131b2e",
+            "surface-container-highest": "#dae2fd",
+            "on-error": "#ffffff",
+            "tertiary-fixed-dim": "#ffb77d",
+            "inverse-on-surface": "#eef0ff",
+            "primary-fixed": "#dde1ff",
+            "surface": "#faf8ff",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed-dim": "#79db8d",
+            "tertiary-container": "#743d00",
+            "secondary-fixed": "#95f8a7",
+            "on-tertiary-fixed": "#2f1500",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-fixed-variant": "#005323",
+            "on-primary-fixed": "#001453",
+            "outline-variant": "#c4c5d5",
+            "secondary-container": "#92f5a4",
+            "tertiary": "#532a00",
+            "primary-container": "#1e40af",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#3755c3",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "tertiary-fixed": "#ffdcc3",
+            "surface-bright": "#faf8ff",
+            "primary-fixed-dim": "#b8c4ff",
+            "on-primary-fixed-variant": "#173bab",
+            "on-background": "#131b2e",
+            "on-secondary-container": "#007233",
+            "on-primary-container": "#a8b8ff",
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#006d30",
+            "inverse-surface": "#283044",
+            "on-secondary": "#ffffff",
+            "error": "#ba1a1a",
+            "outline": "#757684",
+            "surface-container": "#eaedff",
+            "background": "#faf8ff",
+            "surface-variant": "#dae2fd"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xl": "2rem",
+            "space-xs": "0.25rem",
+            "margin": "1rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-md": "1rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Inter"],
+            "label-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "title-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-lg": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-md": ["Inter"]
+          },
+          "fontSize": {
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined[data-weight="fill"] {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Touch optimization for senior citizens */
+    button, input, textarea {
+      touch-action: manipulation;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Modal / Task Focused Container (Restricted Width for Mobile Grid) -->
+<div class="w-full max-w-md mx-auto min-h-screen bg-surface-container-lowest flex flex-col relative pb-44">
+<!-- Top Focus Bar / App Header -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest border-b border-outline-variant px-margin py-space-sm flex items-center justify-between shadow-sm">
+<button aria-label="Cerrar pantalla de calificación" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-transform active:scale-95 focus:outline-2 focus:outline-primary" type="button">
+<span class="material-symbols-outlined text-[28px]" data-icon="close">close</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="font-title-md text-title-md font-bold text-primary tracking-tight">Guía de Oficios</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Red Barrial Solidaria</span>
+</div>
+<div class="min-w-[48px] min-h-[48px] flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[26px]" data-icon="verified_user" data-weight="fill">verified_user</span>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 px-margin pt-space-md space-y-space-lg">
+<!-- Badge de Estado de Servicio -->
+<div class="bg-surface-container-low border border-outline-variant rounded-xl p-space-md flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="check_circle" data-weight="fill">check_circle</span>
+</div>
+<div>
+<h1 class="font-title-md text-title-md font-bold text-on-surface">Trabajo finalizado con éxito</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Tu experiencia protege y orienta a otros vecinos</p>
+</div>
+</div>
+<!-- 1. Tarjeta Resumen del Profesional y Trabajo -->
+<section aria-label="Información del trabajo realizado" class="bg-surface-container-lowest border border-outline-variant rounded-xl p-space-md shadow-sm space-y-space-md">
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover border-2 border-outline-variant" data-alt="Close up portrait photograph of Roberto Carlos Gómez, a trustworthy senior Argentine plumber with a friendly smile, graying hair, wearing a clean blue professional work polo shirt. Soft warm natural light inside a domestic kitchen context, bright and accessible aesthetic matching civic community service design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLRcMC8X0S7nsDhPTVpGvY0flCmJ8WRzKnzXrn5RqHxfjhpBbuNIEIyGeRJDLsAsepU2x7rhZM20wsR_k0pVbHomai5ZTJI5dwgxugNfiDXGT3A_0MiHxQyJMVTDLpXazqfi53YtslByXhMZ0w1uVJD7elTGYaBZSuIuJHHAnCPnKLvQjAY2AScpUHbHo9xUoTdY8fHnoh9xi3oT_SCSSYjxLt6rcc3_W5YdKBmNst"/>
+<span class="absolute -bottom-1 -right-1 bg-secondary-container text-on-secondary-container border-2 border-surface-container-lowest rounded-full w-6 h-6 flex items-center justify-center shadow-sm" title="Plomero Matriculado Verificado">
+<span class="material-symbols-outlined text-[16px]" data-icon="check" data-weight="fill">check</span>
+</span>
+</div>
+<div class="flex-1 min-w-0">
+<span class="inline-flex items-center gap-1 bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm mb-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified" data-weight="fill">verified</span>
+              Matriculado
+            </span>
+<h2 class="font-title-lg text-title-lg text-on-surface leading-tight font-bold">Roberto Carlos Gómez</h2>
+<p class="font-label-md text-label-md text-on-surface-variant mt-0.5">Plomería e Instalaciones de Gas</p>
+</div>
+</div>
+<div class="border-t border-outline-variant pt-space-sm space-y-1">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0" data-icon="home_repair_service">home_repair_service</span>
+<span class="font-body-md text-body-md font-semibold">Reparación de pérdida de cañería en cocina</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pl-7">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="location_on">location_on</span>
+              Caballito, CABA
+            </span>
+<span class="font-medium text-secondary">Finalizado hoy</span>
+</div>
+</div>
+</section>
+<!-- 2. Calificación General por Estrellas (Optical Targets >= 48px) -->
+<section aria-label="Calificación con estrellas" class="bg-surface-container-lowest border border-outline-variant rounded-xl p-space-md shadow-sm text-center space-y-space-md">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">¿Cómo calificarías el trabajo en general?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Tocá una estrella para puntuar:</p>
+</div>
+<!-- Grupo de 5 Estrellas Grandes -->
+<div aria-label="Puntuación de 1 a 5 estrellas" class="flex justify-center items-center gap-2 py-1" role="radiogroup">
+<button aria-checked="true" aria-label="1 estrella" class="min-w-[48px] min-h-[48px] p-1 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-transform active:scale-95 text-tertiary-container focus:outline-2 focus:outline-primary" role="radio" type="button">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim" data-icon="star" data-weight="fill">star</span>
+</button>
+<button aria-checked="true" aria-label="2 estrellas" class="min-w-[48px] min-h-[48px] p-1 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-transform active:scale-95 text-tertiary-container focus:outline-2 focus:outline-primary" role="radio" type="button">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim" data-icon="star" data-weight="fill">star</span>
+</button>
+<button aria-checked="true" aria-label="3 estrellas" class="min-w-[48px] min-h-[48px] p-1 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-transform active:scale-95 text-tertiary-container focus:outline-2 focus:outline-primary" role="radio" type="button">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim" data-icon="star" data-weight="fill">star</span>
+</button>
+<button aria-checked="true" aria-label="4 estrellas" class="min-w-[48px] min-h-[48px] p-1 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-transform active:scale-95 text-tertiary-container focus:outline-2 focus:outline-primary" role="radio" type="button">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim" data-icon="star" data-weight="fill">star</span>
+</button>
+<button aria-checked="true" aria-label="5 estrellas" class="min-w-[48px] min-h-[48px] p-1 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-transform active:scale-95 text-tertiary-container focus:outline-2 focus:outline-primary ring-2 ring-tertiary-fixed-dim/40" role="radio" type="button">
+<span class="material-symbols-outlined text-[44px] text-tertiary-fixed-dim" data-icon="star" data-weight="fill">star</span>
+</button>
+</div>
+<!-- Indicador de Valor Seleccionado -->
+<div class="inline-flex items-center gap-2 bg-surface-container px-space-md py-space-xs rounded-full border border-outline-variant">
+<span class="font-title-md text-title-md font-bold text-on-surface">5.0</span>
+<span class="text-on-surface-variant font-bold">·</span>
+<span class="font-title-md text-title-md text-secondary font-bold">¡Excelente trabajo!</span>
+</div>
+</section>
+<!-- 3. Categorías Clave Destacadas (Botones táctiles grandes) -->
+<section aria-label="Aspectos destacados del servicio" class="space-y-space-sm">
+<div>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">¿Qué destacarías de su servicio?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Elegí las opciones que correspondan tocando cada una:</p>
+</div>
+<div class="space-y-space-sm pt-1">
+<!-- Item 1 (Activo) -->
+<button class="w-full min-h-[56px] text-left p-space-md rounded-xl border border-secondary-container bg-secondary-container/40 text-on-secondary-container flex items-center justify-between transition-transform active:scale-98 shadow-sm" type="button">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0" data-icon="schedule" data-weight="fill">schedule</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Puntualidad</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Llegó a la hora acordada</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="check" data-weight="fill">check</span>
+</div>
+</button>
+<!-- Item 2 (Activo) -->
+<button class="w-full min-h-[56px] text-left p-space-md rounded-xl border border-secondary-container bg-secondary-container/40 text-on-secondary-container flex items-center justify-between transition-transform active:scale-98 shadow-sm" type="button">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0" data-icon="payments" data-weight="fill">payments</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Precio justo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cobró lo presupuestado, sin sorpresas</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="check" data-weight="fill">check</span>
+</div>
+</button>
+<!-- Item 3 (Activo) -->
+<button class="w-full min-h-[56px] text-left p-space-md rounded-xl border border-secondary-container bg-secondary-container/40 text-on-secondary-container flex items-center justify-between transition-transform active:scale-98 shadow-sm" type="button">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0" data-icon="cleaning_services" data-weight="fill">cleaning_services</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Honestidad y prolijidad</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cuidó el lugar y dejó todo limpio</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="check" data-weight="fill">check</span>
+</div>
+</button>
+<!-- Item 4 (Activo) -->
+<button class="w-full min-h-[56px] text-left p-space-md rounded-xl border border-secondary-container bg-secondary-container/40 text-on-secondary-container flex items-center justify-between transition-transform active:scale-98 shadow-sm" type="button">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0" data-icon="sentiment_very_satisfied" data-weight="fill">sentiment_very_satisfied</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Excelente atención</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trato sumamente respetuoso y cordial</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="check" data-weight="fill">check</span>
+</div>
+</button>
+<!-- Item 5 (Activo) -->
+<button class="w-full min-h-[56px] text-left p-space-md rounded-xl border border-secondary-container bg-secondary-container/40 text-on-secondary-container flex items-center justify-between transition-transform active:scale-98 shadow-sm" type="button">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-[26px] text-secondary shrink-0" data-icon="build" data-weight="fill">build</span>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Solución en el acto</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Trajo los repuestos adecuados</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]" data-icon="check" data-weight="fill">check</span>
+</div>
+</button>
+</div>
+</section>
+<!-- 4. Comentario Comunitario -->
+<section aria-label="Comentario para los vecinos" class="bg-surface-container-lowest border border-outline-variant rounded-xl p-space-md shadow-sm space-y-space-sm">
+<label class="block font-title-md text-title-md text-on-surface font-bold" for="comentario-vecinos">
+          Dejale unas palabras a Roberto y a los vecinos <span class="font-normal text-on-surface-variant text-label-sm">(opcional)</span>:
+        </label>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Tu recomendación le da trabajo honesto al barrio y tranquilidad a personas mayores.
+        </p>
+<div class="relative">
+<textarea class="w-full rounded-xl border-2 border-outline-variant bg-surface-container-lowest p-space-md text-body-lg font-body-lg text-on-surface placeholder:text-on-surface-variant/70 focus:border-primary focus:ring-0 resize-none shadow-inner" id="comentario-vecinos" placeholder="Contanos brevemente cómo te atendió Roberto. Tu opinión ayuda mucho a los vecinos del barrio..." rows="4">Impecable trabajo. Roberto vino en el horario acordado, cambió el tramo de cañería con repuestos de calidad y dejó la cocina limpia e impecable. Cobró exactamente lo pactado. Muy educado y de total confianza.</textarea>
+</div>
+<!-- Botón de sugerencia rápida -->
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="lightbulb">lightbulb</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Consejo: Si te dio factura o garantía, podés mencionarlo aquí.</span>
+</div>
+</section>
+<!-- 5. Garantía de Confianza Vecinal y Privacidad -->
+<section class="bg-surface-container-low border border-outline-variant rounded-xl p-space-md flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[24px]" data-icon="shield" data-weight="fill">shield</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-title-md text-title-md font-bold text-on-surface">Transparencia Vecinal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Tu calificación quedará visible en el perfil público de Roberto como <strong class="text-on-surface">Vecino Verificado de Caballito</strong>. Tus datos personales y dirección exacta nunca serán compartidos.
+          </p>
+</div>
+</section>
+</main>
+<!-- Barra de Acciones Fija Inferior (Level 2 Elevation) -->
+<div class="fixed bottom-0 left-0 right-0 z-50 bg-surface-container-lowest border-t border-outline-variant shadow-lg py-space-sm px-margin">
+<div class="max-w-md mx-auto space-y-space-sm">
+<!-- Botón Principal: 56px de alto, tono verde de confirmación -->
+<button class="w-full h-14 min-h-[56px] rounded-xl bg-secondary text-on-secondary font-title-md text-title-md font-bold flex items-center justify-center gap-space-sm shadow-md hover:bg-secondary/90 transition-transform active:scale-98 focus:outline-2 focus:outline-primary" type="button">
+<span>Publicar calificación y finalizar</span>
+<span class="material-symbols-outlined text-[24px]" data-icon="check_circle">check_circle</span>
+</button>
+<!-- Botón Secundario: 48px para postergar -->
+<button class="w-full h-12 min-h-[48px] rounded-xl bg-transparent text-on-surface-variant font-label-lg text-label-lg font-semibold hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+          Calificar más tarde
+        </button>
+</div>
+</div>
+</div>
+</body></html>

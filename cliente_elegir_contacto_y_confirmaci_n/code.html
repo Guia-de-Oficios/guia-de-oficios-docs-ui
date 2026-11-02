@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-surface" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Confirmación de Solicitud - Guía de Oficios</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#00210a",
+            "surface": "#faf8ff",
+            "surface-container-high": "#e2e7ff",
+            "surface-variant": "#dae2fd",
+            "on-surface-variant": "#444653",
+            "on-primary-fixed": "#001453",
+            "on-secondary-container": "#007233",
+            "inverse-primary": "#b8c4ff",
+            "on-secondary": "#ffffff",
+            "tertiary": "#532a00",
+            "secondary-container": "#92f5a4",
+            "primary": "#00288e",
+            "on-background": "#131b2e",
+            "on-tertiary-fixed": "#2f1500",
+            "on-tertiary-container": "#ffa85d",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#b8c4ff",
+            "tertiary-container": "#743d00",
+            "secondary-fixed": "#95f8a7",
+            "tertiary-fixed-dim": "#ffb77d",
+            "primary-container": "#1e40af",
+            "on-primary-container": "#a8b8ff",
+            "on-surface": "#131b2e",
+            "surface-dim": "#d2d9f4",
+            "tertiary-fixed": "#ffdcc3",
+            "inverse-on-surface": "#eef0ff",
+            "surface-bright": "#faf8ff",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#dde1ff",
+            "outline": "#757684",
+            "background": "#faf8ff",
+            "outline-variant": "#c4c5d5",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed-dim": "#79db8d",
+            "on-error-container": "#93000a",
+            "surface-tint": "#3755c3",
+            "on-primary-fixed-variant": "#173bab",
+            "inverse-surface": "#283044",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "on-secondary-fixed-variant": "#005323",
+            "surface-container-highest": "#dae2fd",
+            "secondary": "#006d30",
+            "surface-container": "#eaedff",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "title-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-lg": ["Inter"]
+          },
+          "fontSize": {
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex justify-center selection:bg-primary-fixed">
+<!-- Mobile Container (390px max-width) -->
+<main class="w-full max-w-[420px] bg-background min-h-screen flex flex-col justify-between shadow-lg pb-space-xl">
+<!-- Top Bar Navigation Shell -->
+<header class="w-full bg-surface-container-lowest shadow-sm px-margin py-space-sm sticky top-0 z-40">
+<div class="flex items-center justify-between min-h-[48px]">
+<button aria-label="Volver atrás" class="flex items-center justify-center w-12 h-12 rounded-xl text-primary hover:bg-surface-container-high transition-colors active:scale-95" onclick="window.history.back()" type="button">
+<span class="material-symbols-outlined text-[28px]" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="flex items-center justify-center flex-1 px-space-xs">
+<img alt="Logotipo Guía de Oficios (Corregido)" class="h-9 w-auto object-contain max-w-[180px]" src="https://lh3.googleusercontent.com/aida/AEtjO1VSi9oVrxOk9I3WzL5G_BNPBCJz-NQBuMjNbA9r268P58i3yzHzSTn3qiTpgu37IRBEYlMh62S9ydE6N7j1PYHD62euvrM5RRFVzJ3LOgERSKj_ckkfUbf0N8WnogcDBMEA_PUvq2y6xarE1np9ftKr5rrtB2taLZZrXtznwfskiQlYlFLAK6-1Z1baMWc_1IbqZB_sKTRPSPFy2ge6pKkyiDEMbTlvzNt_NgKGV7ThtQ"/>
+</div>
+<div class="w-12 flex justify-end">
+<span class="font-label-sm text-label-sm text-outline font-semibold">17/17</span>
+</div>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="px-margin pt-space-md flex-1 flex flex-col gap-space-lg">
+<!-- Step Indicator & Status Badge -->
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="task_alt">task_alt</span>
+          Paso final completado
+        </span>
+<span class="font-label-sm text-label-sm text-outline">San Nicolás y alrededores</span>
+</div>
+<!-- Top Confirmation Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant flex flex-col items-center text-center">
+<!-- Big Accessible Success Icon -->
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-secondary mb-space-sm" style="background-color: #DCFCE7;">
+<span class="material-symbols-outlined text-[36px]" data-icon="check_circle" data-weight="fill" style="color: #15803D; font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold mb-space-xs">
+          ¡Listo! Registramos tu solicitud para Roberto Gómez
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          El plomero matriculado del barrio ya recibió el aviso de tu consulta.
+        </p>
+<!-- Order Summary Detail Box -->
+<div class="w-full mt-space-md p-space-md rounded-xl bg-surface-container-low border border-outline-variant text-left">
+<div class="flex items-center gap-2 mb-2 pb-2 border-b border-outline-variant">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="assignment">assignment</span>
+<h2 class="font-title-md text-title-md text-primary font-semibold">Resumen de tu pedido</h2>
+</div>
+<div class="space-y-1.5 text-on-surface font-body-md text-body-md">
+<p class="flex items-start gap-2">
+<strong class="font-semibold text-on-surface shrink-0">Problema:</strong>
+<span>Pérdida en canilla de cocina</span>
+</p>
+<p class="flex items-center gap-2">
+<strong class="font-semibold text-on-surface shrink-0">Urgencia:</strong>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-highest text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">Hoy mismo</span>
+</p>
+<p class="flex items-center gap-2">
+<strong class="font-semibold text-on-surface shrink-0">Zona:</strong>
+<span>Caballito</span>
+</p>
+</div>
+</div>
+</section>
+<!-- Main Action Section: Elderly Peace of Mind Callouts -->
+<section class="flex flex-col gap-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+            ¿Cómo preferís comunicarte ahora con Roberto?
+          </h2>
+<!-- Reassurance Strip for Seniors -->
+<div class="p-space-sm rounded-xl bg-surface-container-low border-l-4 border-l-primary flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5" data-icon="info">info</span>
+<p class="font-body-md text-body-md text-on-surface">
+              No hay chat interno ni complicaciones. Elegí cómo hablar directo con Roberto:
+            </p>
+</div>
+</div>
+<!-- Touch Target 1: WhatsApp CTA -->
+<a class="w-full min-h-[64px] rounded-xl flex items-center justify-between px-space-md py-space-sm text-on-secondary shadow-md active:scale-[0.98] transition-all" href="https://wa.me/5491145890000?text=Hola%20Roberto,%20te%20escribo%20por%20Guía%20de%20Oficios%20por%20la%20pérdida%20en%20canilla" style="background-color: #15803D;">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[30px] text-white" data-icon="chat" data-weight="fill" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div class="text-left">
+<span class="block font-title-lg text-title-lg text-white font-bold leading-tight">
+                Hablar por WhatsApp con Roberto
+              </span>
+<span class="block font-label-sm text-label-sm text-white/90 font-normal">
+                Te abrimos el chat listo con el mensaje armado
+              </span>
+</div>
+</div>
+<span class="material-symbols-outlined text-white text-[28px] shrink-0 ml-1" data-icon="chevron_right">chevron_right</span>
+</a>
+<!-- Touch Target 2: Phone Call CTA -->
+<a class="w-full min-h-[64px] rounded-xl flex items-center justify-between px-space-md py-space-sm text-on-primary shadow-md active:scale-[0.98] transition-all" href="tel:01145890000" style="background-color: #1E40AF;">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[30px] text-white" data-icon="call" data-weight="fill" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div class="text-left">
+<span class="block font-title-lg text-title-lg text-white font-bold leading-tight">
+                Llamar por teléfono a Roberto
+              </span>
+<span class="block font-label-md text-label-md text-white/90 font-semibold tracking-wide">
+                11 4589-XXXX <span class="text-xs font-normal underline decoration-white/60">Tocar para discar</span>
+</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-white text-[28px] shrink-0 ml-1" data-icon="chevron_right">chevron_right</span>
+</a>
+<!-- Worker Guarantee Pill -->
+<div class="flex items-center justify-center gap-2 py-2 px-space-sm rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-[20px]" data-icon="verified_user" style="color: #15803D;">verified_user</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            Roberto es matriculado verificado en CABA. Matrícula Nº 41.890
+          </p>
+</div>
+</section>
+<!-- Bottom Secondary Navigation -->
+<footer class="pt-space-sm flex flex-col items-center">
+<a class="w-full min-h-[56px] rounded-xl border-2 border-outline-variant bg-surface-container-lowest text-on-surface flex items-center justify-center font-label-lg text-label-lg font-bold hover:bg-surface-container active:scale-[0.98] transition-all text-center" href="#">
+<span class="material-symbols-outlined mr-2 text-[22px]" data-icon="home">home</span>
+          Volver al inicio de Guía de Oficios
+        </a>
+<p class="mt-space-sm text-center font-label-sm text-label-sm text-outline">
+          ¿Dudas con el pedido? Llamanos gratis al <span class="font-semibold text-on-surface">0800-444-OFICIO</span>
+</p>
+</footer>
+</div>
+</main>
+</body></html>

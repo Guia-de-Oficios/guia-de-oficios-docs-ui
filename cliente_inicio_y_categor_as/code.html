@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía de Oficios - Inicio del Cliente</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Inter Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "secondary": "#006d30",
+            "on-secondary-container": "#007233",
+            "secondary-fixed": "#95f8a7",
+            "tertiary-container": "#743d00",
+            "on-error": "#ffffff",
+            "tertiary-fixed": "#ffdcc3",
+            "outline-variant": "#c4c5d5",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#005323",
+            "outline": "#757684",
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "surface-container-highest": "#dae2fd",
+            "surface-container-low": "#f2f3ff",
+            "on-tertiary-container": "#ffa85d",
+            "surface-container-high": "#e2e7ff",
+            "surface-container": "#eaedff",
+            "inverse-primary": "#b8c4ff",
+            "inverse-on-surface": "#eef0ff",
+            "primary-fixed-dim": "#b8c4ff",
+            "on-error-container": "#93000a",
+            "surface-bright": "#faf8ff",
+            "on-secondary-fixed": "#00210a",
+            "on-primary": "#ffffff",
+            "tertiary-fixed-dim": "#ffb77d",
+            "on-primary-container": "#a8b8ff",
+            "primary-fixed": "#dde1ff",
+            "on-background": "#131b2e",
+            "secondary-container": "#92f5a4",
+            "on-primary-fixed": "#001453",
+            "surface-tint": "#3755c3",
+            "on-tertiary-fixed": "#2f1500",
+            "on-surface": "#131b2e",
+            "primary": "#00288e",
+            "tertiary": "#532a00",
+            "on-primary-fixed-variant": "#173bab",
+            "on-surface-variant": "#444653",
+            "secondary-fixed-dim": "#79db8d",
+            "error": "#ba1a1a",
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "primary-container": "#1e40af",
+            "surface-variant": "#dae2fd",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#d2d9f4",
+            "inverse-surface": "#283044"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "1rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "gutter": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "headline-md": ["Inter"],
+            "title-lg": ["Inter"],
+            "label-lg": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "label-sm": ["Inter"]
+          },
+          "fontSize": {
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface min-h-full font-body-md text-body-md antialiased flex flex-col justify-between items-center selection:bg-surface-container-highest">
+<!-- Mobile Simulator Canvas Container (max-w-[430px] replicating 390x844px context) -->
+<div class="w-full max-w-[430px] min-h-screen bg-background flex flex-col relative pb-28 shadow-xl">
+<!-- TopAppBar (from Shared Components JSON & Design System) -->
+<header class="bg-surface-container-lowest text-primary docked full-width top shadow-sm sticky top-0 z-40">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-screen-md mx-auto">
+<!-- Leading Icon Button with high accessibility target -->
+<button aria-label="Abrir menú principal" class="w-12 h-12 flex items-center justify-center rounded-xl text-primary hover:bg-surface-container-high transition-transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary-container" type="button">
+<span class="material-symbols-outlined text-[28px]" data-icon="menu">menu</span>
+</button>
+<!-- Brand Headline / Logo from image asset -->
+<div class="flex items-center space-x-2">
+<img alt="Logo Guía de Oficios" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UemojvYQbmFjyF9gomD9h9PttkDJs5N_1NOWrwG_N8gJZBCZvOrYnVFMjSWyjjQE1G3XEbI96BiE1Pidv3NZPs-goPfgVu5Nn2zqIXKLlYVrUXx7pSvZiv8CA_NTpd8JLOzCZ0mcr3nkW3oHHDYYjreE_O2CDQO_3xniNlI1A4tER9d9oMkiMfjPNxIeLTk8rHkkPf4fX90XbQOxg6t_N2N8MnuadLQNNLgldj2CVmiA"/>
+</div>
+<!-- Trailing Action -->
+<button class="min-h-[48px] px-3 py-2 flex items-center justify-center text-primary font-label-md text-label-md font-bold rounded-lg hover:bg-surface-container-high active:scale-95 transition-all focus:outline-none focus:ring-2 focus:ring-primary-container" type="button">
+          Cambiar
+        </button>
+</div>
+</header>
+<!-- Main Content Flow (LazyColumn style single-column architecture) -->
+<main class="flex-1 px-margin pt-space-md space-y-space-lg">
+<!-- Greeting & Neighborhood Context Anchor -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-outline-variant/40 flex flex-col gap-3">
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">
+            ¡Hola, María!
+          </h1>
+<span class="bg-surface-container text-primary font-label-sm text-label-sm px-2.5 py-1 rounded-full font-bold">
+            Vecina activa
+          </span>
+</div>
+<div class="flex items-start justify-between gap-3 pt-1 border-t border-surface-container">
+<div class="flex items-start space-x-2 pt-1">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tu ubicación guardada</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold">Av. Rivadavia 5420, Caballito</span>
+</div>
+</div>
+</div>
+<button class="w-full min-h-[56px] mt-1 bg-surface-container-lowest border-2 border-outline-variant text-on-surface font-label-lg text-label-lg rounded-xl flex items-center justify-center space-x-2 hover:bg-surface-container-high transition-transform active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-primary-container" type="button">
+<span class="material-symbols-outlined text-primary text-[22px]" data-icon="edit_location">edit_location</span>
+<span>Cambiar dirección</span>
+</button>
+</section>
+<!-- Main Query / Callout Block -->
+<section class="space-y-3">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">
+          ¿Qué necesitás solucionar hoy?
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Elegí un oficio o buscá directamente el inconveniente de tu casa.
+        </p>
+<!-- Big Accessible Search Input (min 56dp height) -->
+<div class="relative w-full pt-1">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[28px]" data-icon="search">search</span>
+</div>
+<input class="w-full min-h-[56px] pl-14 pr-12 bg-surface-container-lowest border-2 border-outline-variant text-on-surface font-body-lg text-body-lg rounded-xl placeholder:text-on-surface-variant/70 focus:border-primary-container focus:ring-2 focus:ring-primary-container/20 shadow-sm" placeholder="Ej. Pierde agua la canilla" type="search"/>
+<button aria-label="Borrar búsqueda" class="absolute inset-y-0 right-0 pr-3 flex items-center text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="close">close</span>
+</button>
+</div>
+</section>
+<!-- Contextual Diagnostic Help Card (#EFF6FF tint with #1E40AF/20 border) -->
+<section class="bg-surface-container-low border border-primary-container/30 rounded-xl p-space-md shadow-sm relative overflow-hidden">
+<div class="flex items-start space-x-3.5">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]" data-icon="contact_support" style="font-variation-settings: 'FILL' 1;">contact_support</span>
+</div>
+<div class="flex-1">
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-snug">
+              ¿No sabés qué profesional necesitás?
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Contanos qué pasa en tu hogar y te ayudamos a encontrar al indicado sin complicaciones.
+            </p>
+</div>
+</div>
+<div class="mt-4">
+<button class="w-full min-h-[56px] bg-primary-container text-on-primary font-label-lg text-label-lg rounded-xl flex items-center justify-center space-x-2 shadow-sm hover:opacity-95 active:scale-[0.98] transition-all focus:outline-none focus:ring-4 focus:ring-primary-container/30" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="help_center">help_center</span>
+<span>¿Qué está pasando?</span>
+</button>
+</div>
+</section>
+<!-- Trade Categories 2-Column Grid -->
+<section class="space-y-3 pb-4">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+            Oficios recomendados en tu barrio
+          </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">8 disponibles</span>
+</div>
+<div class="grid grid-cols-2 gap-3.5">
+<!-- Category 1: Plomero -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="water_drop" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Plomero</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Canillas, cañerías y pérdidas</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 2: Electricista -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="bolt" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Electricista</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Enchufes, cables e iluminación</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 3: Gasista (Con Badge Matriculados) -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px] relative overflow-hidden">
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-secondary-fixed text-on-secondary-fixed-variant border border-secondary/20">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+                Matriculados
+              </span>
+</div>
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="local_fire_department" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Gasista</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Calefones, estufas y conexiones</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 4: Aire acondicionado -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="mode_fan">mode_fan</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Aire acondicionado</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Equipos y mantenimiento</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 5: Pintor -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="format_paint">format_paint</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pintor</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Paredes y terminaciones</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 6: Albañil -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="handyman">handyman</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Albañil</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Reparaciones y construcción</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 7: Jardinero -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px]">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="yard">yard</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Jardinero</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Plantas y mantenimiento</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+<!-- Category 8: Cerrajero (Con Badge Urgencias) -->
+<article class="bg-surface-container-lowest rounded-xl p-3.5 border border-outline-variant/60 shadow-sm flex flex-col justify-between hover:border-primary-container transition-all active:scale-[0.97] cursor-pointer min-h-[180px] relative overflow-hidden">
+<div class="absolute top-2 right-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-bold bg-error-container text-on-error-container border border-error/20">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="warning" style="font-variation-settings: 'FILL' 1;">warning</span>
+                Urgencias
+              </span>
+</div>
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="key">key</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Cerrajero</h3>
+<p class="font-label-md text-label-md text-on-surface-variant mt-1 leading-snug">Cerraduras y puertas</p>
+</div>
+<div class="pt-2 flex items-center text-primary font-label-sm text-label-sm font-bold">
+<span>Buscar vecinos</span>
+<span class="material-symbols-outlined text-[18px] ml-1" data-icon="chevron_right">chevron_right</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Neighborhood Trust Guarantee Strip -->
+<section class="bg-surface-container rounded-xl p-space-md flex items-center space-x-3 border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary text-[32px] shrink-0" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<p class="font-body-md text-body-md text-on-surface">
+          Todos los profesionales fueron verificados con DNI y referencias de vecinos de la zona.
+        </p>
+</section>
+</main>
+<!-- BottomNavBar (Shared Component from JSON, locked to 'Inicio' active) -->
+<nav aria-label="Navegación inferior principal" class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs bg-surface-container-lowest shadow-[0_-4px_12px_rgba(15,23,42,0.06)]">
+<div class="w-full max-w-[430px] mx-auto flex justify-around items-center">
+<!-- Tab 1: Inicio (ACTIVE) -->
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-space-md py-space-xs min-h-[56px] focus:outline-none transition-transform active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[24px] text-white" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm font-bold text-white mt-0.5">Inicio</span>
+</button>
+<!-- Tab 2: Mis contactos -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-space-md py-space-xs min-h-[56px] rounded-xl hover:bg-surface-container-high transition-transform active:scale-[0.98] focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="chat">chat</span>
+<span class="font-label-sm text-label-sm font-bold mt-0.5">Mis contactos</span>
+</button>
+<!-- Tab 3: Ayuda -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-space-md py-space-xs min-h-[56px] rounded-xl hover:bg-surface-container-high transition-transform active:scale-[0.98] focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="help">help</span>
+<span class="font-label-sm text-label-sm font-bold mt-0.5">Ayuda</span>
+</button>
+<!-- Tab 4: Mi cuenta -->
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-space-md py-space-xs min-h-[56px] rounded-xl hover:bg-surface-container-high transition-transform active:scale-[0.98] focus:outline-none" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm font-bold mt-0.5">Mi cuenta</span>
+</button>
+</div>
+</nav>
+</div>
+</body></html>

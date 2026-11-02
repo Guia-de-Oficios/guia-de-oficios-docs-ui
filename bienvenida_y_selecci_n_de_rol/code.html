@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bienvenida - Guía de Oficios</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#00210a",
+            "surface": "#faf8ff",
+            "surface-container-high": "#e2e7ff",
+            "surface-variant": "#dae2fd",
+            "on-surface-variant": "#444653",
+            "on-primary-fixed": "#001453",
+            "on-secondary-container": "#007233",
+            "inverse-primary": "#b8c4ff",
+            "on-secondary": "#ffffff",
+            "tertiary": "#532a00",
+            "secondary-container": "#92f5a4",
+            "primary": "#00288e",
+            "on-background": "#131b2e",
+            "on-tertiary-fixed": "#2f1500",
+            "on-tertiary-container": "#ffa85d",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#b8c4ff",
+            "tertiary-container": "#743d00",
+            "secondary-fixed": "#95f8a7",
+            "tertiary-fixed-dim": "#ffb77d",
+            "primary-container": "#1e40af",
+            "on-primary-container": "#a8b8ff",
+            "on-surface": "#131b2e",
+            "surface-dim": "#d2d9f4",
+            "tertiary-fixed": "#ffdcc3",
+            "inverse-on-surface": "#eef0ff",
+            "surface-bright": "#faf8ff",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#dde1ff",
+            "outline": "#757684",
+            "background": "#faf8ff",
+            "outline-variant": "#c4c5d5",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed-dim": "#79db8d",
+            "on-error-container": "#93000a",
+            "surface-tint": "#3755c3",
+            "on-primary-fixed-variant": "#173bab",
+            "inverse-surface": "#283044",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "on-secondary-fixed-variant": "#005323",
+            "surface-container-highest": "#dae2fd",
+            "secondary": "#006d30",
+            "surface-container": "#eaedff",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "title-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-lg": ["Inter"]
+          },
+          "fontSize": {
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+      line-height: 1;
+      display: inline-block;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scroll {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-0 md:p-4 text-on-surface antialiased font-body-md selection:bg-primary-container selection:text-on-primary">
+<!-- Mobile Viewport Container (390x844 px target) -->
+<main class="w-full max-w-[412px] min-h-screen md:min-h-[844px] md:max-h-[900px] bg-slate-50 md:rounded-3xl shadow-2xl flex flex-col justify-between overflow-y-auto custom-scroll relative border border-slate-200">
+<!-- Top Accessible Progress / Header Section -->
+<header class="w-full pt-6 pb-2 px-margin flex flex-col items-center">
+<!-- Top Badging / Location Indicator -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-primary-container mb-3 shadow-sm">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-label-sm tracking-tight">Buenos Aires y Gran Buenos Aires</span>
+</div>
+<!-- Official Logo Banner -->
+<div class="w-full flex justify-center py-1">
+<img alt="Logotipo Guía de Oficios (Corregido)" class="h-16 w-auto max-w-[280px] object-contain drop-shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1VSi9oVrxOk9I3WzL5G_BNPBCJz-NQBuMjNbA9r268P58i3yzHzSTn3qiTpgu37IRBEYlMh62S9ydE6N7j1PYHD62euvrM5RRFVzJ3LOgERSKj_ckkfUbf0N8WnogcDBMEA_PUvq2y6xarE1np9ftKr5rrtB2taLZZrXtznwfskiQlYlFLAK6-1Z1baMWc_1IbqZB_sKTRPSPFy2ge6pKkyiDEMbTlvzNt_NgKGV7ThtQ"/>
+</div>
+</header>
+<!-- Content Canvas -->
+<div class="px-margin flex-1 flex flex-col justify-center py-2 space-y-4">
+<!-- Friendly Introduction Banner -->
+<div class="text-center space-y-2">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-balance">
+          Encontrá profesionales de confianza cerca de tu casa
+        </h1>
+<p class="font-body-md text-body-md text-slate-700 max-w-[340px] mx-auto text-balance leading-relaxed">
+          Sin complicaciones, sin registros difíciles y con personas reales de tu barrio verificadas con DNI y oficio.
+        </p>
+</div>
+<!-- Role Selection Module -->
+<div class="pt-2 space-y-3">
+<h2 class="font-headline-md text-headline-md text-on-surface text-center mb-1">
+          ¿Cómo querés usar Guía de Oficios hoy?
+        </h2>
+<!-- Interactive Selection Cards Form -->
+<fieldset class="space-y-3 m-0 p-0 border-0">
+<legend class="sr-only">Seleccione su rol en la plataforma</legend>
+<!-- Card 1: Cliente / Vecino -->
+<label class="role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-primary-container shadow-md cursor-pointer transition-all duration-150 min-h-[96px] group active:scale-[0.99] ring-2 ring-primary-container/20" id="card-label-client">
+<input checked="" class="sr-only" id="role-client" name="user_role" onchange="handleSelection('client')" type="radio" value="client"/>
+<!-- Accessible Large Icon Badge -->
+<div class="icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 text-primary-container flex items-center justify-center mr-3.5 mt-0.5 border border-blue-200 transition-colors">
+<span class="material-symbols-outlined text-[28px]" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<!-- Text Details -->
+<div class="flex-1 pr-6">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-title-md text-title-md text-slate-900 group-hover:text-primary-container">
+                  Necesito un oficio para mi casa
+                </span>
+</div>
+<p class="font-label-sm text-label-sm text-slate-600 leading-snug">
+                Busco plomeros, electricistas, gasistas y más en mi barrio.
+              </p>
+</div>
+<!-- Custom Visible Radio Indicator -->
+<div class="absolute right-4 top-5 w-6 h-6 rounded-full border-2 border-primary-container flex items-center justify-center bg-white">
+<div class="w-3.5 h-3.5 rounded-full bg-primary-container" id="check-client"></div>
+</div>
+</label>
+<!-- Card 2: Profesional / Oficio -->
+<label class="role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-slate-200 shadow-sm cursor-pointer transition-all duration-150 min-h-[96px] group hover:border-slate-300 active:scale-[0.99]" id="card-label-pro">
+<input class="sr-only" id="role-pro" name="user_role" onchange="handleSelection('pro')" type="radio" value="professional"/>
+<!-- Accessible Large Icon Badge -->
+<div class="icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mr-3.5 mt-0.5 border border-slate-200 transition-colors">
+<span class="material-symbols-outlined text-[28px]" data-icon="home_repair_service">home_repair_service</span>
+</div>
+<!-- Text Details -->
+<div class="flex-1 pr-6">
+<div class="flex items-center gap-1.5 mb-1">
+<span class="font-title-md text-title-md text-slate-900 group-hover:text-primary-container">
+                  Ofrezco mis servicios de oficio
+                </span>
+</div>
+<p class="font-label-sm text-label-sm text-slate-600 leading-snug">
+                Quiero recibir solicitudes de vecinos de mi zona.
+              </p>
+</div>
+<!-- Custom Visible Radio Indicator -->
+<div class="absolute right-4 top-5 w-6 h-6 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white">
+<div class="w-3.5 h-3.5 rounded-full bg-transparent" id="check-pro"></div>
+</div>
+</label>
+</fieldset>
+</div>
+</div>
+<!-- Bottom Actions and Neighborhood Trust Badging -->
+<footer class="w-full px-margin pb-6 pt-2 flex flex-col space-y-3.5">
+<!-- Primary Action CTA Button (56dp standard for elder touch accessibility) -->
+<button class="w-full min-h-[56px] h-14 bg-primary-container hover:bg-blue-900 active:scale-[0.98] text-white rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md transition-all focus:outline-none focus:ring-4 focus:ring-blue-300" id="btn-start" onclick="proceedNext()" type="button">
+<span>Comenzar</span>
+<span class="material-symbols-outlined text-[22px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<!-- Secondary Accessible Navigation Link -->
+<div class="text-center pt-1">
+<a class="inline-block py-2 px-3 text-slate-800 hover:text-primary-container font-label-md text-label-md underline underline-offset-4 decoration-slate-300 transition-colors focus:outline-none focus:ring-2 focus:ring-primary-container rounded-lg" href="#">
+          ¿Ya tenés una cuenta? Iniciar sesión
+        </a>
+</div>
+<!-- Trust & Neighborhood Shield Badge -->
+<div class="w-full bg-emerald-50/80 border border-emerald-200 rounded-xl py-2 px-3 flex items-center justify-center gap-2 shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold">
+          Red vecinal protegida y verificada
+        </span>
+</div>
+</footer>
+</main>
+<!-- Interactive Script for Seamless Selection Feedback -->
+<script>
+    function handleSelection(selected) {
+      const cardClient = document.getElementById('card-label-client');
+      const cardPro = document.getElementById('card-label-pro');
+      const checkClient = document.getElementById('check-client');
+      const checkPro = document.getElementById('check-pro');
+      const iconClient = cardClient.querySelector('.icon-box');
+      const iconPro = cardPro.querySelector('.icon-box');
+
+      if (selected === 'client') {
+        // Activate Client Card
+        cardClient.className = 'role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-primary-container shadow-md cursor-pointer transition-all duration-150 min-h-[96px] group active:scale-[0.99] ring-2 ring-primary-container/20';
+        checkClient.className = 'w-3.5 h-3.5 rounded-full bg-primary-container';
+        iconClient.className = 'icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 text-primary-container flex items-center justify-center mr-3.5 mt-0.5 border border-blue-200 transition-colors';
+
+        // Deactivate Pro Card
+        cardPro.className = 'role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-slate-200 shadow-sm cursor-pointer transition-all duration-150 min-h-[96px] group hover:border-slate-300 active:scale-[0.99]';
+        checkPro.className = 'w-3.5 h-3.5 rounded-full bg-transparent';
+        iconPro.className = 'icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mr-3.5 mt-0.5 border border-slate-200 transition-colors';
+      } else {
+        // Activate Pro Card
+        cardPro.className = 'role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-primary-container shadow-md cursor-pointer transition-all duration-150 min-h-[96px] group active:scale-[0.99] ring-2 ring-primary-container/20';
+        checkPro.className = 'w-3.5 h-3.5 rounded-full bg-primary-container';
+        iconPro.className = 'icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-blue-100 text-primary-container flex items-center justify-center mr-3.5 mt-0.5 border border-blue-200 transition-colors';
+
+        // Deactivate Client Card
+        cardClient.className = 'role-card relative flex items-start p-4 rounded-2xl bg-surface-container-lowest border-2 border-slate-200 shadow-sm cursor-pointer transition-all duration-150 min-h-[96px] group hover:border-slate-300 active:scale-[0.99]';
+        checkClient.className = 'w-3.5 h-3.5 rounded-full bg-transparent';
+        iconClient.className = 'icon-box flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mr-3.5 mt-0.5 border border-slate-200 transition-colors';
+      }
+    }
+
+    function proceedNext() {
+      const isClient = document.getElementById('role-client').checked;
+      const roleText = isClient ? 'Vecino (Cliente)' : 'Oficio (Profesional)';
+      
+      const btn = document.getElementById('btn-start');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin" data-icon="progress_activity">progress_activity</span><span>Cargando...</span>`;
+      
+      setTimeout(() => {
+        btn.innerHTML = `<span>Ingresando como ${isClient ? 'Vecino' : 'Profesional'}</span><span class="material-symbols-outlined text-[22px]" data-icon="check">check</span>`;
+      }, 400);
+    }
+  </script>
+</body></html>

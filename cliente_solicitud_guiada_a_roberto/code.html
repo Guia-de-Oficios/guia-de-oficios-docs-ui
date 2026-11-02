@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-slate-50" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Contacto y Solicitud Guiada - Guía de Oficios</title>
+<!-- Material Symbols Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Inter Google Font -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary-fixed": "#00210a",
+            "surface": "#faf8ff",
+            "surface-container-high": "#e2e7ff",
+            "surface-variant": "#dae2fd",
+            "on-surface-variant": "#444653",
+            "on-primary-fixed": "#001453",
+            "on-secondary-container": "#007233",
+            "inverse-primary": "#b8c4ff",
+            "on-secondary": "#ffffff",
+            "tertiary": "#532a00",
+            "secondary-container": "#92f5a4",
+            "primary": "#00288e",
+            "on-background": "#131b2e",
+            "on-tertiary-fixed": "#2f1500",
+            "on-tertiary-container": "#ffa85d",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#b8c4ff",
+            "tertiary-container": "#743d00",
+            "secondary-fixed": "#95f8a7",
+            "tertiary-fixed-dim": "#ffb77d",
+            "primary-container": "#1e40af",
+            "on-primary-container": "#a8b8ff",
+            "on-surface": "#131b2e",
+            "surface-dim": "#d2d9f4",
+            "tertiary-fixed": "#ffdcc3",
+            "inverse-on-surface": "#eef0ff",
+            "surface-bright": "#faf8ff",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#dde1ff",
+            "outline": "#757684",
+            "background": "#faf8ff",
+            "outline-variant": "#c4c5d5",
+            "surface-container-low": "#f2f3ff",
+            "secondary-fixed-dim": "#79db8d",
+            "on-error-container": "#93000a",
+            "surface-tint": "#3755c3",
+            "on-primary-fixed-variant": "#173bab",
+            "inverse-surface": "#283044",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "on-secondary-fixed-variant": "#005323",
+            "surface-container-highest": "#dae2fd",
+            "secondary": "#006d30",
+            "surface-container": "#eaedff",
+            "error-container": "#ffdad6",
+            "surface-container-lowest": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "space-lg": "1.5rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "title-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "headline-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "label-lg": ["Inter"]
+          },
+          "fontSize": {
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Enforce touch target accessibility and prevent accidental zooms */
+    input, textarea, button {
+      touch-action: manipulation;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-primary selection:text-on-primary">
+<!-- Mobile Viewport Container: Jetpack Compose style framed for 390x844 px -->
+<div class="w-full max-w-[420px] mx-auto min-h-screen bg-surface-container-lowest flex flex-col shadow-xl relative pb-32">
+<!-- App Header & Navigation Bar -->
+<header class="sticky top-0 z-30 bg-surface-container-lowest border-b border-outline-variant px-margin py-space-sm flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<!-- Return Button for elderly UX: Explicit, high contrast, large 48px target -->
+<a aria-label="Volver al perfil de Roberto" class="inline-flex items-center justify-center min-h-[48px] min-w-[48px] -ml-2 rounded-xl text-primary hover:bg-surface-container-high transition-colors active:scale-95" href="#">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="arrow_back">arrow_back</span>
+</a>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Solicitud directa</span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Paso 1 de 2</span>
+</div>
+</div>
+<!-- App Brand Logo Indicator -->
+<div class="flex items-center">
+<img alt="Logotipo Guía de Oficios" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VSi9oVrxOk9I3WzL5G_BNPBCJz-NQBuMjNbA9r268P58i3yzHzSTn3qiTpgu37IRBEYlMh62S9ydE6N7j1PYHD62euvrM5RRFVzJ3LOgERSKj_ckkfUbf0N8WnogcDBMEA_PUvq2y6xarE1np9ftKr5rrtB2taLZZrXtznwfskiQlYlFLAK6-1Z1baMWc_1IbqZB_sKTRPSPFy2ge6pKkyiDEMbTlvzNt_NgKGV7ThtQ"/>
+</div>
+</header>
+<!-- Context Banner: Professional Info Card -->
+<section class="bg-surface-container-low px-margin py-space-md border-b border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 rounded-xl bg-surface-container border border-outline-variant flex items-center justify-center overflow-hidden flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[36px] text-primary" data-icon="person">person</span>
+<!-- Verification Dot -->
+<div class="absolute bottom-0 right-0 bg-secondary rounded-tl-md p-0.5 text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">
+            Contale qué necesitás a Roberto
+          </h1>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-label-md text-label-md text-primary font-semibold">Plomero matriculado</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body-md text-body-md text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[18px] text-outline mr-0.5" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+              Caballito
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Form Workflow -->
+<main class="px-margin pt-space-lg flex-1 space-y-space-lg">
+<!-- Step 1: Urgency Selector (Accessible, High Contrast, Jetpack Radio Cards) -->
+<section aria-labelledby="urgency-title">
+<div class="flex items-baseline justify-between mb-space-sm">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-1.5" id="urgency-title">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary-fixed text-primary text-sm font-bold">1</span>
+            ¿Con cuánta urgencia lo necesitás?
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-sm">
+          Elegí una opción para que Roberto sepa cuándo visitarte.
+        </p>
+<!-- Urgency Selection Cards -->
+<div aria-label="Nivel de urgencia" class="space-y-3" role="radiogroup">
+<!-- Normal Option (Default Selected) -->
+<label class="urgency-card relative flex items-start p-4 rounded-xl border-2 border-primary bg-surface-container-lowest cursor-pointer shadow-sm transition-all hover:bg-surface-container-low min-h-[72px]">
+<input checked="" class="mt-1 h-6 w-6 text-primary border-outline focus:ring-primary focus:ring-offset-2" name="urgency" type="radio" value="normal"/>
+<div class="ml-3.5 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md font-bold text-on-surface">Normal</span>
+<span class="inline-flex items-center gap-1 bg-surface-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm text-primary font-medium">
+<span class="material-symbols-outlined text-[16px]" data-icon="calendar_month">calendar_month</span>
+                  Sin apuro
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Para coordinar visitas y presupuestos durante la semana.
+              </p>
+</div>
+</label>
+<!-- Urgent Option (High Alert Surface) -->
+<label class="urgency-card relative flex items-start p-4 rounded-xl border-2 border-outline-variant bg-surface-container-lowest cursor-pointer shadow-sm transition-all hover:border-error focus-within:border-error min-h-[72px]">
+<input class="mt-1 h-6 w-6 text-error border-outline focus:ring-error focus:ring-offset-2" name="urgency" type="radio" value="urgente"/>
+<div class="ml-3.5 flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md font-bold text-on-surface">Urgente hoy</span>
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-error animate-pulse"></span>
+</div>
+<span class="inline-flex items-center gap-1 bg-error-container text-on-error-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]" data-icon="bolt">bolt</span>
+                  Atención rápida
+                </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+                Cortes de agua, roturas de caño o pérdidas graves en el día.
+              </p>
+</div>
+</label>
+</div>
+</section>
+<!-- Step 2: Problem Description Area -->
+<section aria-labelledby="problem-description-title">
+<div class="mb-space-sm">
+<label class="font-title-lg text-title-lg text-on-surface flex items-center gap-1.5" for="problem-description" id="problem-description-title">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary-fixed text-primary text-sm font-bold">2</span>
+            ¿Qué está pasando en tu casa?
+          </label>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Escribilo con tus palabras. Cuanto más detalle nos des, mejor te ayuda Roberto.
+          </p>
+</div>
+<div class="relative">
+<textarea class="w-full rounded-xl border-2 border-outline-variant bg-surface-container-lowest p-4 font-body-lg text-body-lg text-on-surface placeholder:text-outline focus:border-primary focus:ring-0 shadow-sm transition-all text-left" id="problem-description" placeholder="Ej. Pierde agua la canilla de la cocina debajo de la mesada desde ayer a la tarde..." rows="4"></textarea>
+<!-- Helper Speech or Quick Suggestion Buttons for Seniors -->
+<div class="mt-2.5 flex flex-wrap gap-2">
+<span class="font-label-sm text-label-sm text-outline self-center mr-1">Ejemplos rápidos:</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors" onclick="appendIssue('Gotea la canilla')" type="button">
+              + Gotea la canilla
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors" onclick="appendIssue('No sube agua al tanque')" type="button">
+              + No sube agua al tanque
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high transition-colors" onclick="appendIssue('Pérdida en el inodoro')" type="button">
+              + Pérdida en el inodoro
+            </button>
+</div>
+</div>
+</section>
+<!-- Step 3: Photo Attachment (Min 56px touch target + Visual Preview) -->
+<section aria-labelledby="photo-attachment-title">
+<div class="mb-space-sm">
+<h2 class="font-title-lg text-title-lg text-on-surface flex items-center gap-1.5" id="photo-attachment-title">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary-fixed text-primary text-sm font-bold">3</span>
+            Fotografía del problema <span class="font-normal text-outline text-base">(opcional)</span>
+</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Una foto ayuda al profesional a llevar las herramientas adecuadas.
+          </p>
+</div>
+<div class="space-y-3">
+<!-- Big 56dp Touch Target Button -->
+<button class="w-full min-h-[56px] px-4 py-3 bg-surface-container-lowest border-2 border-dashed border-primary hover:border-primary-container hover:bg-surface-container-low rounded-xl flex items-center justify-center gap-3 transition-colors active:scale-98 shadow-sm text-left group" id="photo-trigger-btn" onclick="simulatePhotoUpload()" type="button">
+<span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary-fixed text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="photo_camera">photo_camera</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-primary">
+                Sacar foto o adjuntar imagen
+              </span>
+<span class="font-label-sm text-label-sm text-outline">
+                Presioná acá para abrir la cámara o tu galería
+              </span>
+</div>
+</button>
+<!-- Friendly Simulated Preview (Visible initially for clear UX comprehension) -->
+<div class="p-3 bg-surface-container-low border border-outline-variant rounded-xl flex items-center justify-between shadow-sm" id="photo-preview-box">
+<div class="flex items-center gap-3">
+<div class="w-14 h-14 rounded-lg bg-surface-container border border-outline-variant flex items-center justify-center overflow-hidden flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-[32px]" data-icon="image">image</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Foto_caño_cocina.jpg</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center font-semibold">
+<span class="material-symbols-outlined text-[16px] mr-1" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Lista para enviar
+                </span>
+</div>
+</div>
+<button aria-label="Quitar fotografía" class="min-h-[48px] min-w-[48px] flex items-center justify-center rounded-lg text-outline hover:text-error hover:bg-error-container transition-colors" onclick="removePhoto()" type="button">
+<span class="material-symbols-outlined text-[24px]" data-icon="delete">delete</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Reassurance Banner (Safety / Neighborhood Trust) -->
+<section class="bg-surface-container p-4 rounded-xl border border-outline-variant flex items-start gap-3.5">
+<div class="p-2 rounded-lg bg-surface-container-lowest text-secondary border border-outline-variant flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">
+            Tu tranquilidad es prioridad
+          </span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+            Tus datos solo se comparten con Roberto para coordinar el trabajo. No recibirás llamadas molestas ni publicidad.
+          </p>
+</div>
+</section>
+<!-- Neighborhood Local Support Note -->
+<div class="text-center py-2">
+<p class="font-label-sm text-label-sm text-outline flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary" data-icon="shield">shield</span>
+          Oficio matriculado y validado por la Comuna 6 de Caballito
+        </p>
+</div>
+</main>
+<!-- Bottom Sticky Action Dock (Jetpack Compose Scaffold BottomBar style) -->
+<!-- strictly Level 2 Elevation: Background #FFFFFF, border-top 1dp #E2E8F0, shadow-lg, min-h 56px button -->
+<footer class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest border-t border-outline-variant shadow-[0_-4px_16px_rgba(15,23,42,0.08)] py-3 px-margin">
+<div class="w-full max-w-[420px] mx-auto flex flex-col gap-2">
+<!-- Primary Action Button: Min 56px height, high contrast accessible green #15803D -->
+<button class="w-full min-h-[56px] px-5 bg-secondary hover:bg-on-secondary-container active:scale-98 rounded-xl font-label-lg text-label-lg text-on-secondary font-bold flex items-center justify-between shadow-md transition-all focus:ring-4 focus:ring-secondary-fixed" onclick="proceedToContact()" type="button">
+<span class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[28px]" data-icon="forum">forum</span>
+<span class="text-left leading-tight">Continuar a elegir contacto<br/><span class="font-normal text-sm opacity-90">(WhatsApp o llamada)</span></span>
+</span>
+<span class="material-symbols-outlined text-[26px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-outline">
+          Podrás revisar todo antes de llamar o mandar mensaje
+        </p>
+</div>
+</footer>
+<!-- Interactive Toast Modal for Elderly Confirmation Feedback -->
+<div class="fixed inset-0 z-50 bg-slate-900/60 hidden items-center justify-center p-4" id="confirmation-dialog">
+<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-6 shadow-2xl border border-outline-variant animate-in fade-in zoom-in-95 duration-200 text-center">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-secondary-fixed text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[36px]" data-icon="check_circle">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mb-2">
+          ¡Casi listo!
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+          ¿Cómo preferís comunicarte ahora con Roberto en Caballito?
+        </p>
+<div class="space-y-3">
+<!-- WhatsApp Contact Button -->
+<button class="w-full min-h-[56px] bg-[#15803D] hover:bg-[#166534] text-white font-bold rounded-xl flex items-center justify-center gap-3 shadow transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[24px]" data-icon="chat">chat</span>
+            Abrir chat de WhatsApp
+          </button>
+<!-- Direct Phone Call Button -->
+<button class="w-full min-h-[56px] bg-primary text-on-primary font-bold rounded-xl flex items-center justify-center gap-3 shadow transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[24px]" data-icon="call">call</span>
+            Llamar por teléfono directo
+          </button>
+<!-- Cancel/Dismiss -->
+<button class="w-full min-h-[48px] bg-transparent text-outline font-semibold rounded-xl hover:bg-surface-container transition-colors" onclick="closeModal()">
+            Seguir editando
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interactions Script -->
+<script>
+    function appendIssue(text) {
+      const textarea = document.getElementById('problem-description');
+      if (textarea.value.trim() === '') {
+        textarea.value = text + ': ';
+      } else {
+        textarea.value += ', ' + text.toLowerCase();
+      }
+      textarea.focus();
+    }
+
+    function removePhoto() {
+      const box = document.getElementById('photo-preview-box');
+      box.style.display = 'none';
+      const trigger = document.getElementById('photo-trigger-btn');
+      trigger.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function simulatePhotoUpload() {
+      const box = document.getElementById('photo-preview-box');
+      box.style.display = 'flex';
+      box.classList.add('ring-2', 'ring-secondary');
+      setTimeout(() => {
+        box.classList.remove('ring-2', 'ring-secondary');
+      }, 1000);
+    }
+
+    function proceedToContact() {
+      const dialog = document.getElementById('confirmation-dialog');
+      dialog.classList.remove('hidden');
+      dialog.classList.add('flex');
+    }
+
+    function closeModal() {
+      const dialog = document.getElementById('confirmation-dialog');
+      dialog.classList.add('hidden');
+      dialog.classList.remove('flex');
+    }
+
+    // Dynamic border highlights for urgency radio options
+    document.querySelectorAll('input[name="urgency"]').forEach((radio) => {
+      radio.addEventListener('change', (e) => {
+        document.querySelectorAll('.urgency-card').forEach((card) => {
+          card.classList.remove('border-primary', 'border-error');
+          card.classList.add('border-outline-variant');
+        });
+        const currentCard = e.target.closest('.urgency-card');
+        if (e.target.value === 'urgente') {
+          currentCard.classList.remove('border-outline-variant');
+          currentCard.classList.add('border-error');
+        } else {
+          currentCard.classList.remove('border-outline-variant');
+          currentCard.classList.add('border-primary');
+        }
+      });
+    });
+  </script>
+</body></html>
