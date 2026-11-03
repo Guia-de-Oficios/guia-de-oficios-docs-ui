@@ -20,6 +20,8 @@ Repositorio central de **Documentación de Producto, Arquitectura y Diseño Grá
 2. 🎨 **[`docs/02_guia_ux_ui_accesible.md`](docs/02_guia_ux_ui_accesible.md)**: Principios de diseño didáctico y accesible para adultos mayores.
 3. 🤝 **[`docs/03_trabajo_colaborativo_y_onboarding.md`](docs/03_trabajo_colaborativo_y_onboarding.md)**: Guía de onboarding para el equipo, cómo dividir tareas entre Backend (GoLand) y Mobile (Android Studio), y cómo conectar el emulador local.
 4. 💡 **[`docs/04_vision_negocio_y_estrategia.md`](docs/04_vision_negocio_y_estrategia.md)**: Estrategia de producto, cómo evitar la fuga de plataforma mediante solicitudes verificadas, y roadmap de monetización (Profesional PRO, Pagos integrados y Membresía Mensual Club Hogar).
+5. 📋 **[`docs/05_backlog_mvp_detallado.md`](docs/05_backlog_mvp_detallado.md)**: Backlog técnico completo del MVP (7 Épicas y 20 Historias de Usuario, 100% real sin mocks + generación de APK instalable).
+6. 📥 **[`docs/05_backlog_jira_mvp.csv`](docs/05_backlog_jira_mvp.csv)**: Archivo CSV listo para importar directamente en **Jira** con todas las épicas, historias, descripciones, criterios de aceptación y Story Points.
 
 ---
 
