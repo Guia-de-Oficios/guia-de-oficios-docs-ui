@@ -1,0 +1,364 @@
+<!DOCTYPE html><html class="h-full" lang="es"><head><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Profesional en camino - Guía de Oficios</title>
+<!-- Google Fonts & Material Symbols -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#757684",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "secondary": "#006d30",
+            "on-secondary": "#ffffff",
+            "background": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb77d",
+            "surface-container": "#eaedff",
+            "surface-container-highest": "#dae2fd",
+            "primary-container": "#1e40af",
+            "inverse-surface": "#283044",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#173bab",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#b8c4ff",
+            "on-secondary-fixed-variant": "#005323",
+            "on-surface-variant": "#444653",
+            "secondary-container": "#92f5a4",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-container": "#a8b8ff",
+            "on-error": "#ffffff",
+            "on-background": "#131b2e",
+            "surface-bright": "#faf8ff",
+            "on-tertiary-fixed": "#2f1500",
+            "on-tertiary-container": "#ffa85d",
+            "tertiary": "#532a00",
+            "secondary-fixed": "#95f8a7",
+            "primary-fixed": "#dde1ff",
+            "inverse-on-surface": "#eef0ff",
+            "on-primary": "#ffffff",
+            "outline-variant": "#c4c5d5",
+            "on-secondary-container": "#007233",
+            "on-secondary-fixed": "#00210a",
+            "on-error-container": "#93000a",
+            "on-surface": "#131b2e",
+            "surface": "#faf8ff",
+            "secondary-fixed-dim": "#79db8d",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#ffdcc3",
+            "tertiary-container": "#743d00",
+            "on-primary-fixed": "#001453",
+            "surface-container-high": "#e2e7ff",
+            "surface-tint": "#3755c3",
+            "surface-dim": "#d2d9f4",
+            "surface-variant": "#dae2fd",
+            "primary-fixed-dim": "#b8c4ff",
+            "primary": "#00288e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-md": "1rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "title-md": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-lg": ["Inter"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-filled {
+      font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    /* Subtle pulse effect for live tracking */
+    @keyframes subtle-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.15); opacity: 0.4; }
+    }
+    .ping-slow {
+      animation: subtle-pulse 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-[#0F172A] font-body-md text-body-md antialiased min-h-screen flex justify-center selection:bg-primary-fixed">
+<!-- Mobile Simulator Frame (390px width ideal viewport for elderly tactile usage) -->
+<div class="w-full max-w-[420px] min-h-screen bg-[#F8FAFC] flex flex-col shadow-xl border-x border-[#E2E8F0] pb-10">
+<!-- TOP APP BAR / HEADER -->
+<header class="sticky top-0 z-40 bg-[#FFFFFF] border-b border-[#E2E8F0] px-4 py-3 flex items-center justify-between shadow-sm"><div class="flex flex-col w-full gap-2"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Volver a la pantalla anterior" class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#F8FAFC] border border-[#E2E8F0] text-[#0F172A] active:scale-95 transition-all" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="flex items-center gap-1.5"><span class="inline-block w-2.5 h-2.5 rounded-full bg-[#15803D] animate-pulse"></span><span class="font-label-sm text-label-sm text-[#15803D] tracking-wide uppercase">Servicio en curso</span></div></div><div class="h-9 flex items-center"><img src="https://lh3.googleusercontent.com/aida/AEtjO1WpZMRtKsXWMiLX07a6ohEK8paeBNc97QvRTYkkNIa0u7AdT1l264tksOkPBhP18k8-R7bV01ZvBVlDAHc_7ZhQGOOdI_mfaS4fYgKfUtkK9Ecinf4Kk5eY7FNwN5Q_N8wr_t3X264z40h4tXu_R0-KNkYJHT5KmeJHb3jSWq-13a1E35QvbRtmlwxo0QI8AFKNqDoyvdYF2fOW_vnPWOcJuOni9NkLXZzog99orRad" alt="Logo Provisional GDO" class="h-8 w-auto object-contain"></div></div><div class="border-t border-[#E2E8F0] pt-1.5"><h1 class="text-[14px] font-bold text-[#1E40AF] leading-tight">Paso 5 - Cliente: Profesional en Camino y Mapa en Vivo</h1><p class="font-title-md text-title-md text-[#0F172A] leading-tight mt-0.5">Seguimiento en vivo</p></div></div></header>
+<main class="flex-1 px-4 pt-4 space-y-4">
+<!-- BANNER DE ESTADO POSITIVO & TIEMPO ESTIMADO -->
+<section class="bg-[#FFFFFF] rounded-2xl border border-[#BBF7D0] shadow-sm p-4 relative overflow-hidden">
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-[#15803D]"></div>
+<div class="flex items-start gap-3.5 pt-1">
+<div class="w-11 h-11 rounded-xl bg-[#DCFCE7] text-[#166534] flex items-center justify-center flex-shrink-0 mt-0.5 border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[26px]">check_circle</span>
+</div>
+<div class="space-y-1">
+<h2 class="font-title-md text-title-md text-[#0F172A] leading-snug">
+              ¡Roberto aceptó tu solicitud y está en camino!
+            </h2>
+<p class="font-body-md text-body-md text-[#475569]">
+              Prepará el mate o esperalo tranquilo en tu casa.
+            </p>
+</div>
+</div>
+<!-- Tarjeta destacada de Horario de Llegada -->
+<div class="mt-3.5 bg-[#EFF6FF] border border-[#BFDBFE] rounded-xl p-3.5 flex flex-col gap-1">
+<div class="flex items-center gap-2 text-[#1E40AF]">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Llegada estimada a Caballito</span>
+</div>
+<div class="font-headline-md text-headline-md text-[#1E40AF] tracking-tight mt-0.5">
+            Entre las 10:15 y 10:25 hs
+          </div>
+<div class="flex items-center gap-2 mt-0.5 text-[#0F172A]">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-md bg-[#DCFCE7] text-[#166534] font-label-sm text-[13px] font-bold">
+              En aprox. 12 minutos
+            </span>
+<span class="text-[#475569] text-[14px]">Tránsito fluido por Av. Rivadavia</span>
+</div>
+</div>
+</section>
+<!-- VISTA DE MAPA ILUSTRADO CABALLITO CON TRAZADO -->
+<section class="bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] shadow-sm overflow-hidden flex flex-col">
+<!-- Barra de título del mapa con chip flotante integrado -->
+<div class="px-4 py-2.5 bg-[#F8FAFC] border-b border-[#E2E8F0] flex items-center justify-between">
+<div class="flex items-center gap-2 text-[#0F172A]">
+<span class="material-symbols-outlined text-[#1E40AF] text-[20px]">near_me</span>
+<span class="font-title-md text-[15px]">Recorrido hacia tu domicilio</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#EFF6FF] text-[#1E40AF] font-label-sm text-[13px] font-bold border border-[#BFDBFE]">
+<span class="material-symbols-outlined text-[15px]">distance</span>
+            A 8 cuadras (650 m)
+          </span>
+</div>
+<!-- Contenedor Visual del Mapa Vectorial Barrial -->
+<div class="relative w-full h-[250px] bg-[#F1F5F9] overflow-hidden select-none">
+<!-- Cuadrícula y Manzanas de Caballito -->
+<svg class="absolute inset-0 w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Bloques Urbanos Manzanas -->
+<rect fill="#E2E8F0" height="60" opacity="0.8" rx="4" width="85" x="15" y="15"></rect>
+<rect fill="#E2E8F0" height="60" opacity="0.8" rx="4" width="130" x="120" y="15"></rect>
+<rect fill="#E2E8F0" height="60" opacity="0.8" rx="4" width="105" x="270" y="15"></rect>
+<rect fill="#E2E8F0" height="75" opacity="0.8" rx="4" width="85" x="15" y="95"></rect>
+<!-- Manzana Plaza / Parque Primera Junta -->
+<rect fill="#DCFCE7" height="75" rx="4" stroke="#BBF7D0" stroke-width="1.5" width="130" x="120" y="95"></rect>
+<rect fill="#E2E8F0" height="75" opacity="0.8" rx="4" width="105" x="270" y="95"></rect>
+<rect fill="#E2E8F0" height="50" opacity="0.8" rx="4" width="85" x="15" y="190"></rect>
+<rect fill="#E2E8F0" height="50" opacity="0.8" rx="4" width="130" x="120" y="190"></rect>
+<rect fill="#E2E8F0" height="50" opacity="0.8" rx="4" width="105" x="270" y="190"></rect>
+<!-- Calles Principales -->
+<!-- Av. Rivadavia (Horizontal ancha) -->
+<line stroke="#FFFFFF" stroke-width="18" x1="0" x2="420" y1="85" y2="85"></line>
+<line stroke="#CBD5E1" stroke-dasharray="6,4" stroke-width="1.5" x1="0" x2="420" y1="85" y2="85"></line>
+<!-- Av. La Plata / Rojas (Vertical) -->
+<line stroke="#FFFFFF" stroke-width="14" x1="110" x2="110" y1="0" y2="250"></line>
+<!-- Calle Centenera / Beauchef (Vertical) -->
+<line stroke="#FFFFFF" stroke-width="14" x1="260" x2="260" y1="0" y2="250"></line>
+<!-- Calle Guayaquil / Rosario (Horizontal inferior) -->
+<line stroke="#FFFFFF" stroke-width="12" x1="0" x2="420" y1="180" y2="180"></line>
+<!-- Trazado de Ruta de Roberto (Azul #1E40AF con halo) -->
+<!-- Empieza en esquina Rivadavia y Centenera, avanza por Rivadavia hasta Rivadavia 5420 -->
+<path d="M 60 180 L 110 180 L 110 85 L 310 85" fill="none" opacity="0.7" stroke="#93C5FD" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+<path d="M 60 180 L 110 180 L 110 85 L 310 85" fill="none" stroke="#1E40AF" stroke-dasharray="1,7" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+<!-- Texto de calles para orientación familiar -->
+<text fill="#475569" font-family="Inter" font-size="10" font-weight="700" x="135" y="81">AV. RIVADAVIA</text>
+<text fill="#166534" font-family="Inter" font-size="10" font-weight="600" x="135" y="125">Plaza Primera Junta</text>
+<text fill="#64748B" font-family="Inter" font-size="9" font-weight="600" x="135" y="176">Rosario / Yerbal</text>
+<text fill="#64748B" font-family="Inter" font-size="9" font-weight="600" transform="rotate(90 114,35)" x="114" y="35">Av. La Plata</text>
+</svg>
+<!-- Marcador: Posición actual de Roberto (Móvil) -->
+<div class="absolute left-[130px] top-[63px] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
+<!-- Pulsing radar ring -->
+<div class="absolute -inset-2 rounded-full bg-[#1E40AF] ping-slow opacity-30"></div>
+<div class="relative bg-[#1E40AF] text-white p-2 rounded-full shadow-lg border-2 border-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<!-- Etiqueta del móvil de Roberto -->
+<div class="mt-1 bg-[#0F172A] text-white text-[11px] font-bold px-2 py-0.5 rounded shadow whitespace-nowrap border border-white/20">
+              Roberto en camino
+            </div>
+</div>
+<!-- Marcador: Destino / Tu Casa (Av. Rivadavia 5420) -->
+<div class="absolute left-[310px] top-[63px] -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center">
+<div class="bg-[#15803D] text-white p-2.5 rounded-full shadow-lg border-2 border-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">home</span>
+</div>
+<div class="mt-1 bg-[#15803D] text-white text-[11px] font-bold px-2 py-0.5 rounded shadow whitespace-nowrap border border-white/20">
+              Tu casa (N° 5420)
+            </div>
+</div>
+<!-- Botón de centrado de mapa táctil y claro -->
+<div class="absolute bottom-2.5 right-2.5 z-20">
+<button aria-label="Centrar en mi casa" class="h-10 px-3 bg-white/95 backdrop-blur-sm text-[#0F172A] border border-[#E2E8F0] rounded-xl text-[12px] font-bold shadow flex items-center gap-1.5 active:bg-[#F1F5F9]" type="button">
+<span class="material-symbols-outlined text-[18px] text-[#1E40AF]">my_location</span>
+              Centrar mapa
+            </button>
+</div>
+</div>
+<div class="p-3 bg-[#FFFFFF] border-t border-[#E2E8F0] flex items-center justify-between text-[13px] text-[#475569]">
+<span class="flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[#15803D] text-[18px]">pin_drop</span>
+            Destino: Av. Rivadavia 5420, Caballito
+          </span>
+<span class="font-bold text-[#1E40AF]">Piso 4 - Dpto B</span>
+</div>
+</section>
+<!-- TARJETA DEL PROFESIONAL ASIGNADO (ROBERTO CARLOS GÓMEZ) -->
+<section class="bg-[#FFFFFF] rounded-2xl border border-[#E2E8F0] shadow-sm p-4 space-y-4">
+<div class="flex items-start gap-3.5">
+<!-- Foto de perfil del profesional (64x64px accesible) -->
+<div class="relative flex-shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover border-2 border-[#E2E8F0] shadow-sm bg-[#F1F5F9]" data-alt="Close up warm portrait of Roberto, an experienced Argentine plumber in his late 50s smiling with kind eyes, wearing a clean navy blue technician polo uniform with a trade logo. Crisp natural morning indoor lighting, neutral light background, highly approachable, dependable and trustworthy community worker style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY8PBeXeUBdG9qvZIHOqBy27qxV2p7kwlZXmvEPpzWLMdgj8KTyhoK3gSPj_3KmA_tkYlxJeUOCAwVXrsnoW-TXt7R_9JtvyQEP3O0coMeEeGNTd2QptPlWqoPzwwyLeh25Fup5nxtZw9dTZ4RgUfL6jpURGTJkn4ZFW-8HeiqcQqChr13G5i19jZa0VgiaR7v0TF-8lnRYID-MtY0qrkR5qunBvLV0Vljp0U3-aKC">
+<div class="absolute -bottom-1.5 -right-1.5 w-6 h-6 rounded-full bg-[#15803D] text-white flex items-center justify-center border-2 border-white shadow">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h3 class="font-title-md text-title-md text-[#0F172A] truncate">
+                Roberto Carlos Gómez
+              </h3>
+</div>
+<p class="text-[14px] text-[#475569] font-medium flex items-center gap-1 mt-0.5">
+<span class="">Plomero y Gasista de barrio</span>
+</p>
+<!-- Datos de Confianza y Calificación -->
+<div class="flex items-center gap-3 mt-1.5 flex-wrap">
+<!-- Rating con estrellas ámbar #D97706 -->
+<div class="flex items-center gap-1 bg-[#FEF3C7] text-[#92400E] px-2 py-0.5 rounded-md text-[13px] font-bold">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+<span class="">4.9</span>
+<span class="text-[#78350F] font-normal text-[12px]">(142 vecinos)</span>
+</div>
+<!-- Matrícula CABA verificada -->
+<div class="flex items-center gap-1 text-[13px] font-bold text-[#166534] bg-[#DCFCE7] px-2 py-0.5 rounded-md border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px]">badge</span>
+<span class="">Matrícula CABA #48.912</span>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-[#E2E8F0] pt-3">
+<p class="text-[14px] text-[#475569] mb-3 leading-snug">
+            ¿Tenés alguna indicación para darle o no encontrás el timbre? Podés comunicarte directamente con él:
+          </p>
+<!-- BOTONES DE CONTACTO DIRECTO GRANDES ACCESIBLES (Mínimo 56px de alto) -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Botón Llamada Directa (Azul #1E40AF) -->
+<a aria-label="Llamar por teléfono a Roberto" class="h-14 min-h-[56px] px-3 rounded-xl bg-[#1E40AF] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:bg-[#1E3A8A] active:scale-[0.98] transition-all no-underline text-center" href="tel:+5491144556677">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span class="">Llamar ahora</span>
+</a>
+<!-- Botón WhatsApp Directo (Verde #15803D) -->
+<a aria-label="Enviar mensaje de WhatsApp a Roberto" class="h-14 min-h-[56px] px-3 rounded-xl bg-[#15803D] text-white font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:bg-[#166534] active:scale-[0.98] transition-all no-underline text-center" href="https://wa.me/5491144556677">
+<span class="material-symbols-filled text-[24px]">chat</span>
+<span class="">WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- RESUMEN DE SEGURIDAD Y TRANQUILIDAD VECINAL (Senior-friendly) -->
+<section class="bg-[#EFF6FF] rounded-2xl border-l-4 border-l-[#1E40AF] border border-[#DBEAFE] p-4 space-y-3">
+<div class="flex items-center gap-2 text-[#1E40AF]">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+<h4 class="font-title-md text-[17px] text-[#0F172A]">Tu seguridad ante todo</h4>
+</div>
+<ul class="space-y-2.5 text-[15px] text-[#0F172A] leading-relaxed">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#15803D] text-[20px] mt-0.5 flex-shrink-0">check_circle</span>
+<span class="material-symbols-outlined text-[#15803D] text-[20px] mt-0.5 flex-shrink-0">check_circle</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[#15803D] text-[20px] mt-0.5 flex-shrink-0">check_circle</span>
+<span class="material-symbols-outlined text-[#15803D] text-[20px] mt-0.5 flex-shrink-0">check_circle</span>
+</li>
+</ul>
+</section>
+<!-- BOTÓN SECUNDARIO DE AYUDA O CANCELACIÓN -->
+<section class="pt-2 pb-4">
+<div class="flex flex-col gap-2">
+<button class="w-full min-h-[52px] h-[52px] rounded-xl bg-[#FFFFFF] border-2 border-[#E2E8F0] text-[#0F172A] font-label-md text-label-md flex items-center justify-center gap-2 active:bg-[#F8FAFC] active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[22px] text-[#475569]">help</span>
+<span class="">¿Dudas o necesitás cancelar la visita?</span>
+</button>
+<p class="text-center text-[13px] text-[#475569] px-2">
+            Línea barrial de asistencia ciudadana disponible: <strong>0800-444-OFICIO</strong> (Lun a Vie 8 a 19 hs)
+          </p>
+</div>
+</section>
+</main>
+<!-- FOOTER NAV ACCESIBLE (Bottom Bar para contexto si el usuario desea navegar) -->
+<nav class="sticky bottom-0 bg-[#FFFFFF] border-t border-[#E2E8F0] px-4 py-2 flex justify-around items-center shadow-lg z-50">
+<a class="flex flex-col items-center justify-center py-1 px-3 text-[#1E40AF] font-bold" href="#">
+<span class="material-symbols-filled text-[24px]">explore</span>
+<span class="text-[12px] mt-0.5">Seguimiento</span>
+</a>
+<a class="flex flex-col items-center justify-center py-1 px-3 text-[#475569] hover:text-[#0F172A]" href="#">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="text-[12px] mt-0.5">Mis contactos</span>
+</a>
+<a class="flex flex-col items-center justify-center py-1 px-3 text-[#475569] hover:text-[#0F172A]" href="#">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+<span class="text-[12px] mt-0.5">Ayuda</span>
+</a>
+<a class="flex flex-col items-center justify-center py-1 px-3 text-[#475569] hover:text-[#0F172A]" href="#">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[12px] mt-0.5">Mi cuenta</span>
+</a>
+</nav>
+</div>
+
+
+</body></html>

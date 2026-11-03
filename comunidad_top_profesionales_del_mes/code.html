@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ranking Barrial: Top Profesionales del Mes - Guía de Oficios</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "outline": "#757684",
+            "on-tertiary-fixed-variant": "#6e3900",
+            "secondary": "#006d30",
+            "on-secondary": "#ffffff",
+            "background": "#faf8ff",
+            "tertiary-fixed-dim": "#ffb77d",
+            "surface-container": "#eaedff",
+            "surface-container-highest": "#dae2fd",
+            "primary-container": "#1e40af",
+            "inverse-surface": "#283044",
+            "error-container": "#ffdad6",
+            "on-primary-fixed-variant": "#173bab",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#b8c4ff",
+            "on-secondary-fixed-variant": "#005323",
+            "on-surface-variant": "#444653",
+            "secondary-container": "#92f5a4",
+            "surface-container-low": "#f2f3ff",
+            "on-primary-container": "#a8b8ff",
+            "on-error": "#ffffff",
+            "on-background": "#131b2e",
+            "surface-bright": "#faf8ff",
+            "on-tertiary-fixed": "#2f1500",
+            "on-tertiary-container": "#ffa85d",
+            "tertiary": "#532a00",
+            "secondary-fixed": "#95f8a7",
+            "primary-fixed": "#dde1ff",
+            "inverse-on-surface": "#eef0ff",
+            "on-primary": "#ffffff",
+            "outline-variant": "#c4c5d5",
+            "on-secondary-container": "#007233",
+            "on-secondary-fixed": "#00210a",
+            "on-error-container": "#93000a",
+            "on-surface": "#131b2e",
+            "surface": "#faf8ff",
+            "secondary-fixed-dim": "#79db8d",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#ffdcc3",
+            "tertiary-container": "#743d00",
+            "on-primary-fixed": "#001453",
+            "surface-container-high": "#e2e7ff",
+            "surface-tint": "#3755c3",
+            "surface-dim": "#d2d9f4",
+            "surface-variant": "#dae2fd",
+            "primary-fixed-dim": "#b8c4ff",
+            "primary": "#00288e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-xl": "2rem",
+            "space-md": "1rem",
+            "margin": "1rem",
+            "space-sm": "0.5rem",
+            "gutter": "1rem"
+          },
+          "fontFamily": {
+            "title-md": ["Inter"],
+            "label-lg": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-lg": ["Inter"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "label-lg": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-md": ["15px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-fill {
+      font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Safe viewport styling for mobile simulator */
+    body {
+      background-color: #f1f5f9;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Hide scrollbars for chips while enabling smooth drag */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex justify-center items-start min-h-screen text-on-surface">
+<!-- Mobile Viewport Container (390px mobile frame) -->
+<div class="w-full max-w-[390px] min-h-screen bg-[#F8FAFC] flex flex-col relative pb-24 shadow-2xl">
+<!-- TopAppBar (from Shared Components JSON with semantic customization) -->
+<header class="sticky top-0 z-40 bg-surface-container-lowest border-b border-outline-variant/40 shadow-sm">
+<div class="flex justify-between items-center w-full px-margin py-space-sm max-w-screen-md mx-auto">
+<div class="flex items-center space-x-2">
+<!-- Logo Brand Mark -->
+<div class="w-9 h-9 rounded-xl bg-[#1E40AF] flex items-center justify-center text-white relative shadow-sm">
+<span class="material-symbols-outlined text-[20px]" data-icon="home_repair_service">home_repair_service</span>
+<span class="absolute -top-1 -right-1 w-4 h-4 bg-[#15803D] rounded-full border-2 border-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-white font-bold" data-icon="check">check</span>
+</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md font-bold text-primary block leading-tight">Guía de Oficios</span>
+<span class="text-[10px] tracking-wider text-secondary font-bold uppercase block leading-none">PROFESIONALES DE CONFIANZA</span>
+</div>
+</div>
+<button class="flex items-center space-x-1 text-on-surface-variant hover:bg-surface-container-high px-space-xs py-space-xs rounded-lg transition-all min-h-[48px]" type="button">
+<span class="material-symbols-outlined text-outline text-[20px]" data-icon="menu">menu</span>
+</button>
+</div>
+<!-- Neighborhood Subheader selector with Trailing Action 'Cambiar' -->
+<div class="bg-surface-container-low px-margin py-2 flex items-center justify-between border-t border-outline-variant/30">
+<div class="flex items-center space-x-1.5 overflow-hidden">
+<span class="material-symbols-outlined text-primary-container text-[18px] flex-shrink-0" data-icon="location_on">location_on</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Caballito y alrededores</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold hover:underline px-2 py-1 rounded flex items-center" type="button">
+          Cambiar
+          <span class="material-symbols-outlined text-[16px] ml-0.5" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="flex-1 flex flex-col">
+<!-- Community Hero Banner -->
+<section class="px-margin pt-space-md pb-space-sm">
+<div class="bg-gradient-to-br from-surface-container-lowest to-[#EFF6FF] border border-[#E2E8F0] rounded-2xl p-space-md shadow-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-6 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[110px] text-primary" data-icon="emoji_events">emoji_events</span>
+</div>
+<div class="flex items-center space-x-2 mb-1.5">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-bold bg-[#DCFCE7] text-[#166534] border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[14px] mr-1" data-icon="verified">verified</span>
+              Noviembre 2024
+            </span>
+<span class="font-label-sm text-[12px] text-on-surface-variant font-medium">Actualizado hoy</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-[#0F172A] font-bold tracking-tight">
+            Top Profesionales del Mes
+          </h1>
+<p class="font-body-md text-body-md text-[#475569] mt-1 leading-snug">
+            Elegidos por los vecinos por su puntualidad, honestidad en los precios y excelencia en el trabajo.
+          </p>
+<div class="mt-3 pt-2.5 border-t border-[#E2E8F0] flex items-center justify-between text-[13px] text-primary font-medium">
+<span class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="groups">groups</span>
+<span>+840 vecinos votaron este mes</span>
+</span>
+<span class="font-bold underline decoration-dotted">100% Verificados</span>
+</div>
+</div>
+</section>
+<!-- Podio / Top 3 Destacado Asymmetric Bento -->
+<section class="px-margin pt-space-sm pb-space-md">
+<div class="flex items-center justify-between mb-3">
+<h2 class="font-title-lg text-title-lg text-[#0F172A] flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-[#D97706] text-[24px]" data-icon="military_tech">military_tech</span>
+<span>Podio Barrial Destacado</span>
+</h2>
+<span class="font-label-sm text-[12px] text-[#475569] bg-white px-2 py-0.5 rounded-md border border-[#E2E8F0]">Comuna 6</span>
+</div>
+<!-- Bento Grid for Top 3 -->
+<div class="grid grid-cols-2 gap-2.5">
+<!-- Puesto #1: Roberto Carlos Gómez (Full Width Hero Card) -->
+<div class="col-span-2 bg-white rounded-2xl border-2 border-[#1E40AF]/20 shadow-md p-space-md relative overflow-hidden">
+<!-- Ribbon / Crown Badge -->
+<div class="absolute top-0 right-0 bg-[#1E40AF] text-white px-3 py-1 rounded-bl-xl shadow-sm flex items-center space-x-1">
+<span class="material-symbols-outlined text-[16px] text-[#FFD700] material-symbols-fill" data-icon="workspace_premium">workspace_premium</span>
+<span class="font-label-sm text-[12px] font-bold tracking-wide">PUESTO #1</span>
+</div>
+<div class="flex items-start space-x-3.5 mt-1">
+<div class="relative flex-shrink-0">
+<img class="w-[72px] h-[72px] rounded-xl object-cover border-2 border-[#E2E8F0] shadow-sm" data-alt="A warm and respectful portrait of an experienced Argentine plumber and gas technician smiling kindly in Caballito Buenos Aires. He wears a tidy dark blue work polo shirt with identification badge. The lighting is bright natural outdoor day style with sharp details and honest dignified expression reflecting senior community trust." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFMU9z7we_Bfl7AT8nprIRQsdObKxTvAzrzTc374AMJTzx9Bn-vH9hnlJaf2IiLhd9NxFK4UTqULdDXyas6shAKobmN3N2O086tNlAfOAx6PoGvdBgCHAQqTKAL1CWU0S6xrecpSdfTx6cra1wd43PUgWU-EVQpPZQ3G25n8J4jOb7Lf2Hgnjq6zur-ZRnQvDbu-54RYL3mUwBUlFnFJxISaNoRG2ny4HRqgXP8uFA"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border-2 border-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[13px] font-bold" data-icon="verified_user">verified_user</span>
+</span>
+</div>
+<div class="flex-1 pr-14">
+<div class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-[#EFF6FF] text-[#1E40AF] mb-1">
+                  Matriculado Oficial
+                </div>
+<h3 class="font-title-md text-title-md text-[#0F172A] leading-tight">Roberto Carlos Gómez</h3>
+<p class="font-label-sm text-[13px] text-[#475569] leading-snug">Plomero y Gasista Matriculado</p>
+<p class="text-[12px] text-[#475569] flex items-center mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-outline mr-0.5" data-icon="pin_drop">pin_drop</span>
+                  Av. Pedro Goyena / Caballito
+                </p>
+</div>
+</div>
+<!-- Stats & High-Trust Highlight -->
+<div class="grid grid-cols-2 gap-2 mt-3.5 pt-3 border-t border-[#E2E8F0]">
+<div class="flex items-center space-x-1.5 bg-[#FEF3C7]/40 px-2.5 py-1.5 rounded-lg border border-[#FDE68A]">
+<span class="material-symbols-outlined text-[#D97706] text-[20px] material-symbols-fill" data-icon="star">star</span>
+<div>
+<span class="font-title-md text-[15px] font-bold text-[#0F172A]">4.9</span>
+<span class="text-[11px] text-[#475569] font-medium block leading-none">(142 reseñas)</span>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 bg-[#DCFCE7]/60 px-2.5 py-1.5 rounded-lg border border-[#BBF7D0]">
+<span class="material-symbols-outlined text-[#15803D] text-[20px]" data-icon="schedule">schedule</span>
+<div>
+<span class="font-label-sm text-[12px] font-bold text-[#166534] leading-tight block">100% Puntual</span>
+<span class="text-[10px] text-[#166534] block leading-none">Noviembre</span>
+</div>
+</div>
+</div>
+<!-- Vecinal quote snippet -->
+<div class="mt-2.5 bg-slate-50 p-2 rounded-lg border border-slate-200/80 flex items-start space-x-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5 flex-shrink-0" data-icon="format_quote">format_quote</span>
+<p class="text-[12px] text-[#0F172A] italic leading-tight">
+                "Vino a los 20 min un domingo por pérdida de gas. Cobró lo justo y dejó certificado." <span class="text-[#475569] font-medium not-italic">- Marta, vecina de Senillosa</span>
+</p>
+</div>
+<!-- 56dp CTA Profile & Contact Action -->
+<div class="mt-3.5 flex gap-2">
+<button class="w-full h-[52px] bg-[#1E40AF] text-white rounded-xl font-label-lg text-label-lg flex items-center justify-center space-x-1.5 hover:bg-[#173bab] active:scale-[0.98] transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="badge">badge</span>
+<span>Ver perfil y trabajos</span>
+</button>
+</div>
+</div>
+<!-- Puesto #2: Martín Edgardo Silva (Silver Podio) -->
+<div class="bg-white rounded-2xl border border-[#E2E8F0] shadow-sm p-3 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-slate-100 text-slate-700 px-2 py-0.5 rounded-md border border-slate-300 font-bold text-[11px] flex items-center space-x-0.5">
+<span class="material-symbols-outlined text-[13px] text-slate-500 material-symbols-fill" data-icon="workspace_premium">workspace_premium</span>
+<span>#2</span>
+</div>
+<div>
+<div class="relative w-14 h-14 mb-2">
+<img class="w-14 h-14 rounded-xl object-cover border border-[#E2E8F0]" data-alt="Close up professional portrait of a responsible mature Argentine male electrician in a work shirt holding a multimeter in an apartment setting. Clean bright daylight setting with honest reassuring look, navy blue and neutral slate tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIWmlcUsgMfVvS7xUf_UY3jqIgqvbZsQQF723nnRD99FrN7_M5-5hPhxtvIdccx1QHKQDBMsgFwyMOfCz-BoSpAXDHm2TEoEefCR1ekNniCOYq_c_LZvfUbG1Jq0xlQT7zlZaY2sxo5MQkTGAGmT7fa0v3jQ5gg51dOo0Z0tL6Bdc3OQtsbauKlAB5NFhOSHoOGIEsizjDPaI_ZGZSJ6282ZuCZ6I4DlnyW51ixtVT"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border border-white">
+<span class="material-symbols-outlined text-[10px]" data-icon="check">check</span>
+</span>
+</div>
+<h4 class="font-title-md text-[15px] font-bold text-[#0F172A] leading-tight line-clamp-1">Martín E. Silva</h4>
+<p class="text-[12px] text-[#475569] line-clamp-1">Electricista matriculado</p>
+<div class="flex items-center space-x-1 mt-1.5">
+<span class="material-symbols-outlined text-[#D97706] text-[16px] material-symbols-fill" data-icon="star">star</span>
+<span class="text-[13px] font-bold text-[#0F172A]">4.8</span>
+<span class="text-[11px] text-[#475569]">(89 trab.)</span>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-[#E2E8F0]">
+<span class="text-[11px] text-[#166534] bg-[#DCFCE7] px-1.5 py-0.5 rounded font-semibold block text-center mb-2 truncate">
+                Disyuntores y térmicas
+              </span>
+<button class="w-full h-[44px] bg-white border border-[#1E40AF] text-[#1E40AF] rounded-xl text-[13px] font-bold hover:bg-[#EFF6FF] active:scale-[0.98] transition-all" type="button">
+                Ver perfil
+              </button>
+</div>
+</div>
+<!-- Puesto #3: Carlos Daniel Rossi (Bronze Podio) -->
+<div class="bg-white rounded-2xl border border-[#E2E8F0] shadow-sm p-3 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute top-2 right-2 bg-amber-50 text-[#743d00] px-2 py-0.5 rounded-md border border-[#ffdcc3] font-bold text-[11px] flex items-center space-x-0.5">
+<span class="material-symbols-outlined text-[13px] text-[#743d00] material-symbols-fill" data-icon="workspace_premium">workspace_premium</span>
+<span>#3</span>
+</div>
+<div>
+<div class="relative w-14 h-14 mb-2">
+<img class="w-14 h-14 rounded-xl object-cover border border-[#E2E8F0]" data-alt="Honest portrait of a skilled Latin American house painter and mason craftsman in clean painter overalls standing indoors with neutral clean wall behind. Friendly welcoming gaze, bright natural light, reliable neighborhood professional persona." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCfWiGAy9_wQ364PAXfTI1lnz_0baEPkFp5Tf9ukYFBbuwTCkI-f8cVQhoJU-NoDVGVgSySgEdSvjrL4x58rCNVISWVbPSd41zkrWyaApvCNKShCu3o8RBILNGe6mGamSTrMGdptXl3PMhqmdgNmZHxvRb1BN2sIyGn5HzN0pmXF96CH_1JT6TTz-m_ikG-iKy1QMZ63iNtUid5YBTBACCl8JjRa90UuBtvijgs-yK"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border border-white">
+<span class="material-symbols-outlined text-[10px]" data-icon="check">check</span>
+</span>
+</div>
+<h4 class="font-title-md text-[15px] font-bold text-[#0F172A] leading-tight line-clamp-1">Carlos D. Rossi</h4>
+<p class="text-[12px] text-[#475569] line-clamp-1">Pintor y albañil</p>
+<div class="flex items-center space-x-1 mt-1.5">
+<span class="material-symbols-outlined text-[#D97706] text-[16px] material-symbols-fill" data-icon="star">star</span>
+<span class="text-[13px] font-bold text-[#0F172A]">4.8</span>
+<span class="text-[11px] text-[#475569]">(65 trab.)</span>
+</div>
+</div>
+<div class="mt-3 pt-2 border-t border-[#E2E8F0]">
+<span class="text-[11px] text-[#006d30] bg-[#DCFCE7] px-1.5 py-0.5 rounded font-semibold block text-center mb-2 truncate">
+                Presupuestos sin cargo
+              </span>
+<button class="w-full h-[44px] bg-white border border-[#1E40AF] text-[#1E40AF] rounded-xl text-[13px] font-bold hover:bg-[#EFF6FF] active:scale-[0.98] transition-all" type="button">
+                Ver perfil
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Trade Filter Chips -->
+<section class="pt-space-xs pb-space-sm">
+<div class="px-margin flex items-center justify-between mb-2">
+<span class="font-label-sm text-[13px] font-bold text-[#0F172A] uppercase tracking-wider">Filtrar por oficio</span>
+<span class="text-[12px] text-[#475569]">Mostrando todos</span>
+</div>
+<div class="flex items-center space-x-2 px-margin overflow-x-auto hide-scrollbar pb-1">
+<button class="flex-shrink-0 h-[44px] px-4 rounded-full bg-[#1E40AF] text-white font-label-sm text-label-sm flex items-center space-x-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]" data-icon="check">check</span>
+<span>Todos</span>
+</button>
+<button class="flex-shrink-0 h-[44px] px-4 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] font-label-sm text-label-sm hover:border-[#1E40AF] flex items-center space-x-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[#1E40AF] text-[18px]" data-icon="plumbing">plumbing</span>
+<span>Plomeros</span>
+</button>
+<button class="flex-shrink-0 h-[44px] px-4 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] font-label-sm text-label-sm hover:border-[#1E40AF] flex items-center space-x-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[#D97706] text-[18px]" data-icon="bolt">bolt</span>
+<span>Electricistas</span>
+</button>
+<button class="flex-shrink-0 h-[44px] px-4 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] font-label-sm text-label-sm hover:border-[#1E40AF] flex items-center space-x-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-[#15803D] text-[18px]" data-icon="mode_heat">mode_heat</span>
+<span>Gasistas</span>
+</button>
+<button class="flex-shrink-0 h-[44px] px-4 rounded-full bg-white border border-[#E2E8F0] text-[#0F172A] font-label-sm text-label-sm hover:border-[#1E40AF] flex items-center space-x-1.5 shadow-xs" type="button">
+<span class="material-symbols-outlined text-primary text-[18px]" data-icon="format_paint">format_paint</span>
+<span>Pintores</span>
+</button>
+</div>
+</section>
+<!-- Ranking List: Puestos #4 al #7 -->
+<section class="px-margin pt-space-xs space-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-title-lg text-title-lg text-[#0F172A]">Cuadro de Honor Barrial</h2>
+<span class="text-[12px] text-[#475569]">Posiciones 4 al 10</span>
+</div>
+<!-- Card Puesto #4 -->
+<article class="bg-white rounded-2xl border border-[#E2E8F0] p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-3">
+<div class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-title-md text-[14px] font-bold text-[#475569] flex-shrink-0 border border-[#E2E8F0]">
+                #4
+              </div>
+<div class="relative">
+<img class="w-[58px] h-[58px] rounded-xl object-cover border border-[#E2E8F0]" data-alt="A portrait of a dependable senior Argentine locksmith and metalworker standing in front of his workshop in Buenos Aires. Clear friendly expression with warm eyes wearing a brown carpenter apron, clear bright illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1x8X7XpZshkANWiNkqlN0WWyEAZIAPcjrBAkB4f0t6WXtfraEcGRcw9xHvGJTSf-3P6--XTgN1dgNvIvDVUkx7Tumy0NgkvZ3OPcLOPcM8kSv-2E7dcmvxaHBX1jqQLu2ySJNyIuc7bXtrPowgtf2h--lReveibGp4c2AgOpQpQPPaNhFL9jfbDcztm1yTFSa9-yvzF0_0UjWkKyzE6F_aVoPg68Yiuqknf5_wZD"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border border-white">
+<span class="material-symbols-outlined text-[10px]" data-icon="check">check</span>
+</span>
+</div>
+<div>
+<div class="flex items-center space-x-1">
+<h3 class="font-title-md text-[16px] font-bold text-[#0F172A]">Jorge Alberto Benítez</h3>
+</div>
+<p class="font-label-sm text-[13px] text-[#475569]">Cerrajería 24hs y Puertas blindadas</p>
+<div class="flex items-center space-x-2 mt-1">
+<span class="flex items-center text-[#D97706] text-[13px] font-bold">
+<span class="material-symbols-outlined text-[16px] material-symbols-fill mr-0.5" data-icon="star">star</span>
+                    4.8
+                  </span>
+<span class="text-[#E2E8F0]">•</span>
+<span class="text-[12px] text-[#475569] font-medium">54 trabajos listos</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Vecinal endorsement badge -->
+<div class="mt-3 bg-[#EFF6FF] rounded-xl px-3 py-2 border border-[#DBEAFE] flex items-center space-x-2">
+<span class="material-symbols-outlined text-[#1E40AF] text-[18px]" data-icon="thumb_up">thumb_up</span>
+<span class="text-[12px] text-[#1E40AF] font-semibold">
+              Vecinos destacan: "Llegó de madrugada en 15 min y cobró precio justo".
+            </span>
+</div>
+<!-- Action CTA -->
+<div class="mt-3 pt-2.5 border-t border-[#E2E8F0] flex items-center justify-between">
+<span class="text-[12px] text-[#166534] font-medium flex items-center">
+<span class="w-2 h-2 rounded-full bg-[#15803D] mr-1.5 animate-pulse"></span>
+              Disponible hoy
+            </span>
+<button class="h-[44px] px-4 rounded-xl bg-white border-2 border-[#1E40AF] text-[#1E40AF] font-label-sm text-label-sm font-bold hover:bg-[#EFF6FF] active:scale-[0.98] transition-all flex items-center space-x-1" type="button">
+<span>Ver perfil y disponibilidad</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card Puesto #5 -->
+<article class="bg-white rounded-2xl border border-[#E2E8F0] p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-3">
+<div class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-title-md text-[14px] font-bold text-[#475569] flex-shrink-0 border border-[#E2E8F0]">
+                #5
+              </div>
+<div class="relative">
+<img class="w-[58px] h-[58px] rounded-xl object-cover border border-[#E2E8F0]" data-alt="A portrait of a confident and tidy air conditioning technician and refrigeration specialist in Buenos Aires posing next to professional diagnostic tools. High clarity daylight shot highlighting clean uniform and friendly neighborly demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtpXHLE3d3uX-61U21RJZiQx4INuni1rM4RPsLg48VaqdVTEZqLSwNXKIgULLn6TN4yuPU9Frj43cQpY789XW4I-4huaehYz5sc5Rt4MdDPVyTCAv2_lEU93W-I9hALj5TIdTwnk0eiufas-vy-WMT9UyalAsa8Qnt7wOlvT6Ii-hszqazeXJRKwKyA0QXbEVHqLogm6iN09qp-AC53UJtlgF5vaijROKRHhA64YSQ"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border border-white">
+<span class="material-symbols-outlined text-[10px]" data-icon="check">check</span>
+</span>
+</div>
+<div>
+<h3 class="font-title-md text-[16px] font-bold text-[#0F172A]">Mariano L. Fernández</h3>
+<p class="font-label-sm text-[13px] text-[#475569]">Técnico Aire Acondicionado (Matriculado)</p>
+<div class="flex items-center space-x-2 mt-1">
+<span class="flex items-center text-[#D97706] text-[13px] font-bold">
+<span class="material-symbols-outlined text-[16px] material-symbols-fill mr-0.5" data-icon="star">star</span>
+                    4.7
+                  </span>
+<span class="text-[#E2E8F0]">•</span>
+<span class="text-[12px] text-[#475569] font-medium">48 instalaciones</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3 bg-[#DCFCE7]/70 rounded-xl px-3 py-2 border border-[#BBF7D0] flex items-center space-x-2">
+<span class="material-symbols-outlined text-[#15803D] text-[18px]" data-icon="cleaning_services">cleaning_services</span>
+<span class="text-[12px] text-[#166534] font-semibold">
+              Vecinos destacan: "Dejó todo impecable, colocó lona y limpió el polvo".
+            </span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-[#E2E8F0] flex items-center justify-between">
+<span class="text-[12px] text-[#475569] flex items-center">
+<span class="material-symbols-outlined text-[15px] text-outline mr-1" data-icon="event_available">event_available</span>
+              Turnos en 48hs
+            </span>
+<button class="h-[44px] px-4 rounded-xl bg-white border-2 border-[#1E40AF] text-[#1E40AF] font-label-sm text-label-sm font-bold hover:bg-[#EFF6FF] active:scale-[0.98] transition-all flex items-center space-x-1" type="button">
+<span>Ver perfil y disponibilidad</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card Puesto #6 -->
+<article class="bg-white rounded-2xl border border-[#E2E8F0] p-space-md shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-start space-x-3">
+<div class="w-7 h-7 rounded-lg bg-slate-100 flex items-center justify-center font-title-md text-[14px] font-bold text-[#475569] flex-shrink-0 border border-[#E2E8F0]">
+                #6
+              </div>
+<div class="relative">
+<img class="w-[58px] h-[58px] rounded-xl object-cover border border-[#E2E8F0]" data-alt="Portrait of an experienced woman specialist in residential electrical repairs and appliance fixing in Buenos Aires. Bright ambient light, wearing safety glasses around neck, smiling warmly with professional authority and credibility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa7uSbBs6OSm7GJCKuleEnpWwLgdeC5JqShZ88XJUPAFojl3uCc61rvg8I2lMesFM5GeQSsyhV9haikf3dociZSitFdB1k0snOIm3PThbEzd_saWOJJzTAJ96rrCe3NMpZEx63VhoE-hMvtt6xgg3UycHuM3q-7Irf-R--AwdSUHHr_VNzMK7sQsSbNynKVM0cQ7vKYCyeTp6pBBFIP_UJYGMU134ruNWH1_IDYeMl"/>
+<span class="absolute -bottom-1 -right-1 bg-[#15803D] text-white rounded-full p-0.5 border border-white">
+<span class="material-symbols-outlined text-[10px]" data-icon="check">check</span>
+</span>
+</div>
+<div>
+<h3 class="font-title-md text-[16px] font-bold text-[#0F172A]">Silvia Beatriz Morales</h3>
+<p class="font-label-sm text-[13px] text-[#475569]">Electricista e Iluminación LED</p>
+<div class="flex items-center space-x-2 mt-1">
+<span class="flex items-center text-[#D97706] text-[13px] font-bold">
+<span class="material-symbols-outlined text-[16px] material-symbols-fill mr-0.5" data-icon="star">star</span>
+                    4.7
+                  </span>
+<span class="text-[#E2E8F0]">•</span>
+<span class="text-[12px] text-[#475569] font-medium">41 trabajos</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-3 bg-[#FEF3C7]/60 rounded-xl px-3 py-2 border border-[#FDE68A] flex items-center space-x-2">
+<span class="material-symbols-outlined text-[#D97706] text-[18px]" data-icon="price_check">price_check</span>
+<span class="text-[12px] text-[#743d00] font-semibold">
+              Vecinos destacan: "Presupuesto claro de entrada y súper prolija".
+            </span>
+</div>
+<div class="mt-3 pt-2.5 border-t border-[#E2E8F0] flex items-center justify-between">
+<span class="text-[12px] text-[#166534] font-medium flex items-center">
+<span class="w-2 h-2 rounded-full bg-[#15803D] mr-1.5"></span>
+              Zona Parque Rivadavia
+            </span>
+<button class="h-[44px] px-4 rounded-xl bg-white border-2 border-[#1E40AF] text-[#1E40AF] font-label-sm text-label-sm font-bold hover:bg-[#EFF6FF] active:scale-[0.98] transition-all flex items-center space-x-1" type="button">
+<span>Ver perfil y disponibilidad</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Transparency & Community Integrity Section -->
+<section class="px-margin py-space-lg">
+<div class="bg-white rounded-2xl border border-[#E2E8F0] p-space-md shadow-sm">
+<div class="flex items-center space-x-2 text-primary font-bold mb-1.5">
+<span class="material-symbols-outlined text-[22px]" data-icon="shield_with_heart">shield_with_heart</span>
+<h3 class="font-title-md text-[16px]">¿Cómo se calcula este ranking?</h3>
+</div>
+<p class="font-body-md text-[14px] text-[#475569] leading-relaxed">
+            Se basa exclusivamente en calificaciones reales de vecinos verificados tras completar trabajos. 
+            <strong class="text-[#0F172A]">Sin publicidad paga, sin patrocinadores ni comisiones.</strong>
+</p>
+<div class="mt-3 pt-3 border-t border-[#E2E8F0] flex items-center justify-between text-[12px] text-[#475569]">
+<span class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" data-icon="policy">policy</span>
+<span>Auditoría comunitaria mensual</span>
+</span>
+<a class="font-bold text-[#1E40AF] hover:underline" href="#">Ver criterios</a>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Shared Component from JSON, active state mapped autonomously to 'Inicio' since this is the primary community ranking showcase) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-space-xs py-space-xs shadow-lg bg-surface-container-lowest border-t border-outline-variant/30 max-w-[390px] mx-auto right-0">
+<!-- Inicio (Active Item) -->
+<a class="flex flex-col items-center justify-center bg-primary-container text-white rounded-xl px-space-md py-space-xs min-h-[56px] shadow-sm" href="#">
+<span class="material-symbols-outlined text-[22px] material-symbols-fill" data-icon="home">home</span>
+<span class="font-label-sm text-[12px] font-bold mt-0.5">Inicio</span>
+</a>
+<!-- Mis contactos -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl px-space-md py-space-xs min-h-[56px] transition-all" href="#">
+<span class="material-symbols-outlined text-[22px]" data-icon="chat">chat</span>
+<span class="font-label-sm text-[12px] mt-0.5">Mis contactos</span>
+</a>
+<!-- Ayuda -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl px-space-md py-space-xs min-h-[56px] transition-all" href="#">
+<span class="material-symbols-outlined text-[22px]" data-icon="help">help</span>
+<span class="font-label-sm text-[12px] mt-0.5">Ayuda</span>
+</a>
+<!-- Mi cuenta -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface rounded-xl px-space-md py-space-xs min-h-[56px] transition-all" href="#">
+<span class="material-symbols-outlined text-[22px]" data-icon="person">person</span>
+<span class="font-label-sm text-[12px] mt-0.5">Mi cuenta</span>
+</a>
+</nav>
+</div>
+</body></html>
