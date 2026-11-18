@@ -26,6 +26,19 @@ Repositorio central de **Documentación de Producto, Arquitectura, Hoja de Ruta 
 
 ---
 
+## 🗺️ Progreso General de los 14 Pasos
+
+| Paso | Nombre de Etapa | Estado Actual |
+| :---: | :--- | :---: |
+| **Paso 1** | Modularización de Pantallas, Selector de Rol Inicial y Login con `bcrypt` (Vistas #1, #2 y #8) | ✅ **Completado** |
+| **Paso 2** | Registro Manual Completo, Dirección Barrial, Geocodificación y Google Auth Seguro (Vista #3) | ✅ **Completado** |
+| **Paso 3** | Redirección Inteligente por Rol, Sesión JWT y Blindaje de Endpoints (`withRequiredAuth`) | ✅ **Completado** |
+| **Paso 4** | Barra Superior, Barra Inferior, Historial `Mis Contactos` y Pantalla `Mi Cuenta` por Rol | ✅ **Completado** |
+| **Paso 5** | Home del Vecino, Diagnóstico Inteligente y Semilla de los 8 Rubros (Vista #4) | 🔜 **Próximo paso** |
+| **Pasos 6–14** | Resultados PostGIS, Perfil Profesional con Coil, Podio Barrial, Solicitud Guiada, Mapa en Vivo, Calificación y Flujo Profesional | ⏳ Pendiente |
+
+---
+
 ## 🖥️ Las 15 Vistas y Activos Oficiales de Stitch
 
 | # | Pasos Asociados | Carpeta | Vista (HTML Intacto) | Captura de Referencia |
