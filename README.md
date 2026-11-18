@@ -34,8 +34,9 @@ Repositorio central de **Documentación de Producto, Arquitectura, Hoja de Ruta 
 | **Paso 2** | Registro Manual Completo, Dirección Barrial, Geocodificación y Google Auth Seguro (Vista #3) | ✅ **Completado** |
 | **Paso 3** | Redirección Inteligente por Rol, Sesión JWT y Blindaje de Endpoints (`withRequiredAuth`) | ✅ **Completado** |
 | **Paso 4** | Barra Superior, Barra Inferior, Historial `Mis Contactos` y Pantalla `Mi Cuenta` por Rol | ✅ **Completado** |
-| **Paso 5** | Home del Vecino, Diagnóstico Inteligente y Semilla de los 8 Rubros (Vista #4) | 🔜 **Próximo paso** |
-| **Pasos 6–14** | Resultados PostGIS, Perfil Profesional con Coil, Podio Barrial, Solicitud Guiada, Mapa en Vivo, Calificación y Flujo Profesional | ⏳ Pendiente |
+| **Paso 5** | Home del Vecino, Diagnóstico Inteligente y Semilla de los 8 Rubros (Vista #4) | ✅ **Completado** |
+| **Paso 6** | Pantalla de Resultados PostGIS 1:1 con Stitch (Vista #5) | 🔜 **Próximo paso** |
+| **Pasos 7–14** | Perfil Profesional con Coil, Podio Barrial, Solicitud Guiada, Mapa en Vivo, Calificación y Flujo Profesional | ⏳ Pendiente |
 
 ---
 
